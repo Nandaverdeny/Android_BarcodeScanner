@@ -1,10 +1,6 @@
 [
     {
-        "merged": "/Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/common_ic_googleplayservices.png",
-        "source": "/Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/drawable-ldpi-v4/common_ic_googleplayservices.png"
-    },
-    {
-        "merged": "/Users/verdeny/Desktop/android-vision-master/visionSamples/barcode-reader/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/common_ic_googleplayservices.png",
-        "source": "/Users/verdeny/Desktop/android-vision-master/visionSamples/barcode-reader/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/res/drawable-ldpi-v4/common_ic_googleplayservices.png"
+        "merged": "C:\\Users\\escurity\\AndroidStudioProjects\\Android_BarcodeScanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\common_ic_googleplayservices.png",
+        "source": "C:\\Users\\escurity\\.android\\build-cache\\6b164f874e1529d7e3cf0f85a953d498cf1bcb9a\\output\\res\\drawable-ldpi-v4\\common_ic_googleplayservices.png"
     }
 ]

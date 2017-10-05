@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:shrinkColumns="*"
+    android:stretchColumns="*">
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_weight="1"
+            android:background="#dcdcdc"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="Category"
+            android:textColor="#000000"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_weight="1"
+            android:background="#d3d3d3"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="Desc"
+            android:textColor="#000000"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_weight="1"
+            android:background="#cac9c9"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="Qty"
+            android:textColor="#000000"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_weight="1"
+            android:background="#cac9c9"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="Transfered"
+            android:textColor="#000000"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_weight="1"
+            android:background="#cac9c9"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="Action"
+            android:textColor="#000000"
+            android:textSize="10dp" />
+
+
+    </TableRow>
+    <TableRow
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/editTextAssetCategory"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="Category"
+            android:textColor="#000000"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/editTextDescription"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="Desc"
+            android:textColor="#000000"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/editTextQty"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="Qty"
+            android:textColor="#000000"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/editTextTransfered"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="Transfered"
+            android:textColor="#000000"
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="Scan"
+            android:textColor="#000000"
+            android:textSize="10dp"
+            />
+
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/editTextIDDetail"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:padding="0dip"
+            android:text="id"
+            android:textColor="#000000"
+            android:textSize="2dp"
+            android:visibility="invisible"/>
+    </TableRow>
+</TableLayout>

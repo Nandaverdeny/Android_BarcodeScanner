@@ -1,321 +1,468 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml:2:1-39:12
+ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:2:1-55:12
 	package
-		ADDED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml:3:5-66
-		INJECTED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:3:5-66
+		INJECTED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml
 	android:installLocation
-		ADDED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml:4:5-35
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:4:5-35
 uses-feature#android.hardware.camera
-ADDED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml:6:5-60
+ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:6:5-60
 	android:name
-		ADDED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml:6:19-57
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:6:19-57
 uses-permission#android.permission.CAMERA
-ADDED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml:8:5-65
+ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:8:5-65
 	android:name
-		ADDED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml:8:22-62
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:8:22-62
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:9:5-67
+MERGED from [com.google.android.gms:play-services-ads-lite:9.0.1] C:\Users\escurity\.android\build-cache\cfb655225856bc613f638680734ea36925a03b92\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics:9.0.1] C:\Users\escurity\.android\build-cache\411a30b8a35e8573de346fd59c5f18ef846e5b6e\output\AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-appinvite:9.0.1] C:\Users\escurity\.android\build-cache\64a58068b7bca5d773421db85881059685248e88\output\AndroidManifest.xml:19:5-67
+MERGED from [com.google.firebase:firebase-crash:9.0.1] C:\Users\escurity\.android\build-cache\a367cc9efbd4e96baa2340ef7e6ecd05e36f34f0\output\AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-gcm:9.0.1] C:\Users\escurity\.android\build-cache\00fe55a7fc6a9a624a39cfb8e016f8dce377857e\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-iid:9.0.1] C:\Users\escurity\.android\build-cache\4b76141a0a461d2faec96df6ff100e14c705559a\output\AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-analytics-impl:9.0.1] C:\Users\escurity\.android\build-cache\40efdc5e4eb80aadc6a64cedfb0de99c1bd23784\output\AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-tagmanager-api:9.0.1] C:\Users\escurity\.android\build-cache\d60da46d518d5f217f89dad3477e433fdc182e97\output\AndroidManifest.xml:21:5-67
+MERGED from [com.google.firebase:firebase-analytics:9.0.1] C:\Users\escurity\.android\build-cache\c2b588a794c36e0468a5720ff3a9fce124e12533\output\AndroidManifest.xml:21:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:9.0.1] C:\Users\escurity\.android\build-cache\db8181c79246a0a7ca9f2469bc5ba05063a35899\output\AndroidManifest.xml:21:5-67
+MERGED from [com.google.firebase:firebase-iid:9.0.1] C:\Users\escurity\.android\build-cache\d3d3686e93cee2ddb2f766a2b084f527e2790c23\output\AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-maps:9.0.1] C:\Users\escurity\.android\build-cache\855451cfe6277e5319c02b20902b717c1661e5ad\output\AndroidManifest.xml:21:5-66
+	android:name
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:9:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:10:5-79
+MERGED from [com.google.android.gms:play-services-ads-lite:9.0.1] C:\Users\escurity\.android\build-cache\cfb655225856bc613f638680734ea36925a03b92\output\AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-analytics:9.0.1] C:\Users\escurity\.android\build-cache\411a30b8a35e8573de346fd59c5f18ef846e5b6e\output\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-nearby:9.0.1] C:\Users\escurity\.android\build-cache\77309131b1632c81049753a8f380130d22f404c8\output\AndroidManifest.xml:19:5-79
+MERGED from [com.google.android.gms:play-services-analytics-impl:9.0.1] C:\Users\escurity\.android\build-cache\40efdc5e4eb80aadc6a64cedfb0de99c1bd23784\output\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-tagmanager-api:9.0.1] C:\Users\escurity\.android\build-cache\d60da46d518d5f217f89dad3477e433fdc182e97\output\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-analytics:9.0.1] C:\Users\escurity\.android\build-cache\c2b588a794c36e0468a5720ff3a9fce124e12533\output\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:9.0.1] C:\Users\escurity\.android\build-cache\db8181c79246a0a7ca9f2469bc5ba05063a35899\output\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:9.0.1] C:\Users\escurity\.android\build-cache\d3d3686e93cee2ddb2f766a2b084f527e2790c23\output\AndroidManifest.xml:20:5-79
+MERGED from [com.google.android.gms:play-services-maps:9.0.1] C:\Users\escurity\.android\build-cache\855451cfe6277e5319c02b20902b717c1661e5ad\output\AndroidManifest.xml:20:5-78
+	android:name
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:10:22-76
 application
-ADDED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml:10:5-37:19
-MERGED from [com.android.support:support-v4:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.google.android.gms:play-services-vision:9.4.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/9.4.0/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-base:9.4.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/AndroidManifest.xml:19:5-23:19
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.google.android.gms:play-services-tasks:9.4.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.4.0/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:design:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/design/24.2.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-vector-drawable:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.0/AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.0/AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
+ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:12:5-53:19
+MERGED from [com.google.android.gms:play-services:9.0.1] C:\Users\escurity\.android\build-cache\cbc002c73e505f95f7d3c5e41d40f6811fd94e92\output\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-ads-lite:9.0.1] C:\Users\escurity\.android\build-cache\cfb655225856bc613f638680734ea36925a03b92\output\AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.android.gms:play-services-analytics:9.0.1] C:\Users\escurity\.android\build-cache\411a30b8a35e8573de346fd59c5f18ef846e5b6e\output\AndroidManifest.xml:27:5-20
+MERGED from [com.google.android.gms:play-services-appinvite:9.0.1] C:\Users\escurity\.android\build-cache\64a58068b7bca5d773421db85881059685248e88\output\AndroidManifest.xml:20:5-30:19
+MERGED from [com.google.android.gms:play-services-auth:9.0.1] C:\Users\escurity\.android\build-cache\b8f6a72d630a538c09a925a674d8ff2531611a64\output\AndroidManifest.xml:20:5-32:19
+MERGED from [com.google.android.gms:play-services-cast:9.0.1] C:\Users\escurity\.android\build-cache\47ee912ed84438cf37afde57eba81ac5824e9d10\output\AndroidManifest.xml:19:5-20
+MERGED from [com.android.support:mediarouter-v7:23.0.0] C:\Users\escurity\.android\build-cache\751ced6710c4968149d68b3dc90a2dfbf136919b\output\AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-config:9.0.1] C:\Users\escurity\.android\build-cache\d9eb93a838ff3eeb79b32de12eaada0fe93c26ed\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.firebase:firebase-crash:9.0.1] C:\Users\escurity\.android\build-cache\a367cc9efbd4e96baa2340ef7e6ecd05e36f34f0\output\AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.firebase:firebase-auth:9.0.1] C:\Users\escurity\.android\build-cache\e7b43f465c56906bfc3525d3047c2a0692316fcf\output\AndroidManifest.xml:20:5-21:19
+MERGED from [com.google.firebase:firebase-auth-common:9.0.1] C:\Users\escurity\.android\build-cache\7e9f99c51df65e282458563b31fa1c147b68a6ce\output\AndroidManifest.xml:20:5-21:19
+MERGED from [com.google.firebase:firebase-messaging:9.0.1] C:\Users\escurity\.android\build-cache\a4781d652c2f11371a82d82aedefa8d67c440865\output\AndroidManifest.xml:20:5-32:19
+MERGED from [com.google.android.gms:play-services-fitness:9.0.1] C:\Users\escurity\.android\build-cache\e5cfd62256c8a0970a4b7ea1b1263a1da85f81d3\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-games:9.0.1] C:\Users\escurity\.android\build-cache\1cee5b705f2556dda058b7a3e4c1b34959aa1d34\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-drive:9.0.1] C:\Users\escurity\.android\build-cache\fe462692821a4ee01ac1695376f98cfb0268ec04\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-gcm:9.0.1] C:\Users\escurity\.android\build-cache\00fe55a7fc6a9a624a39cfb8e016f8dce377857e\output\AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:9.0.1] C:\Users\escurity\.android\build-cache\7982f370fbd6f583d7692fe16a77460540ad7bfe\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-iid:9.0.1] C:\Users\escurity\.android\build-cache\4b76141a0a461d2faec96df6ff100e14c705559a\output\AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-location:9.0.1] C:\Users\escurity\.android\build-cache\ac00a25658ab5f7a948721947fb5a2427a2fed23\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-nearby:9.0.1] C:\Users\escurity\.android\build-cache\77309131b1632c81049753a8f380130d22f404c8\output\AndroidManifest.xml:20:5-20
+MERGED from [com.google.android.gms:play-services-panorama:9.0.1] C:\Users\escurity\.android\build-cache\7e0521613b709be6f166121e13d2ab9f14a373a7\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-plus:9.0.1] C:\Users\escurity\.android\build-cache\b40b05e4141af0f989f4578397f37b993af72907\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-safetynet:9.0.1] C:\Users\escurity\.android\build-cache\f49cdbbcdbe0c536e699cdffe6bb0fae90d729a5\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-analytics-impl:9.0.1] C:\Users\escurity\.android\build-cache\40efdc5e4eb80aadc6a64cedfb0de99c1bd23784\output\AndroidManifest.xml:27:5-20
+MERGED from [com.google.android.gms:play-services-tagmanager-api:9.0.1] C:\Users\escurity\.android\build-cache\d60da46d518d5f217f89dad3477e433fdc182e97\output\AndroidManifest.xml:24:5-38:19
+MERGED from [com.google.firebase:firebase-analytics:9.0.1] C:\Users\escurity\.android\build-cache\c2b588a794c36e0468a5720ff3a9fce124e12533\output\AndroidManifest.xml:26:5-41:19
+MERGED from [com.google.firebase:firebase-analytics-impl:9.0.1] C:\Users\escurity\.android\build-cache\db8181c79246a0a7ca9f2469bc5ba05063a35899\output\AndroidManifest.xml:26:5-41:19
+MERGED from [com.google.firebase:firebase-iid:9.0.1] C:\Users\escurity\.android\build-cache\d3d3686e93cee2ddb2f766a2b084f527e2790c23\output\AndroidManifest.xml:30:5-59:19
+MERGED from [com.google.android.gms:play-services-vision:9.0.1] C:\Users\escurity\.android\build-cache\d0a260b6d63bc2ce2a88d5cd31c19d5c4d4f077f\output\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-identity:9.0.1] C:\Users\escurity\.android\build-cache\4f20e821730a2bce46ef52bf360ba209cc5bc7f8\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-maps:9.0.1] C:\Users\escurity\.android\build-cache\855451cfe6277e5319c02b20902b717c1661e5ad\output\AndroidManifest.xml:27:5-20
+MERGED from [com.google.android.gms:play-services-wearable:9.0.1] C:\Users\escurity\.android\build-cache\333d3a56450cc253a36cd6701b5a24a57e725c46\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-base:9.0.1] C:\Users\escurity\.android\build-cache\6b164f874e1529d7e3cf0f85a953d498cf1bcb9a\output\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.firebase:firebase-common:9.0.1] C:\Users\escurity\.android\build-cache\3633a47d372fea598c33a18c2493ca841c9abc73\output\AndroidManifest.xml:5:5-12:19
+MERGED from [com.google.android.gms:play-services-tasks:9.0.1] C:\Users\escurity\.android\build-cache\8bc985cce2ed47adfc5716d40719d7abbf8e0989\output\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:9.0.1] C:\Users\escurity\.android\build-cache\813d7c08e60f5771412596d4e2e2517f17f313e8\output\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:design:24.2.0] C:\Users\escurity\.android\build-cache\75082d9e55fc9f729a9c46d81cbe7678800c4985\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:24.2.0] C:\Users\escurity\.android\build-cache\7898a38eb62242343c711762484b9f2d07ee1cec\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:24.2.0] C:\Users\escurity\.android\build-cache\e84473fef836a71ce20c542f0ad8f42fd33114fa\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:24.2.0] C:\Users\escurity\.android\build-cache\298308a90a91adc2fb035dfe3c5f1e164ef721cb\output\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-v4:24.2.0] C:\Users\escurity\.android\build-cache\9d172b14055453f251b04c1e1d5cc9763093ebeb\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:24.2.0] C:\Users\escurity\.android\build-cache\4955f4006df67acaa3e06ebf14e8a79be3cc23cb\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:24.2.0] C:\Users\escurity\.android\build-cache\2dacb18a47e04af5b2b43d8b5d5680227a7c1c98\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:24.2.0] C:\Users\escurity\.android\build-cache\1c72c396049410503c452b30bbfbfa7702c27462\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:24.2.0] C:\Users\escurity\.android\build-cache\00d47c721b8ea4e9c050f8ff4e2d10750b4099fb\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.0] C:\Users\escurity\.android\build-cache\bdcd63592e4fc18e69de4e5bf72886bc445f24d7\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\escurity\.android\build-cache\37989257a13fb77ea0ecf691d78865561aea9fdc\output\AndroidManifest.xml:9:5-20
 	android:label
-		ADDED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml:15:9-40
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:17:9-40
 	android:supportsRtl
-		ADDED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml:16:9-37
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:18:9-35
 	android:hardwareAccelerated
-		ADDED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml:13:9-43
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:15:9-43
 	android:fullBackupContent
-		ADDED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml:12:9-42
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:14:9-42
 	android:allowBackup
-		ADDED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml:11:9-35
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:13:9-35
 	android:icon
-		ADDED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml:14:9-38
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:16:9-38
 	android:theme
-		ADDED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml:17:9-47
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:20:9-47
+	android:name
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:19:9-68
 meta-data#com.google.android.gms.version
-ADDED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml:18:9-20:69
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:21:9-23:69
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:21:9-23:69
+ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:9.0.1] C:\Users\escurity\.android\build-cache\813d7c08e60f5771412596d4e2e2517f17f313e8\output\AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml:20:13-66
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:23:13-66
 	android:name
-		ADDED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml:19:13-58
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:22:13-58
 meta-data#com.google.android.gms.vision.DEPENDENCIES
-ADDED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml:21:9-23:39
+ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:24:9-26:39
 	android:value
-		ADDED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml:23:13-36
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:26:13-36
 	android:name
-		ADDED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml:22:13-70
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:25:13-70
 activity#com.google.android.gms.samples.vision.barcodereader.MainActivity
-ADDED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml:25:9-33:20
+ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:28:9-30:59
 	android:label
-		ADDED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml:27:13-56
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:30:13-56
 	android:name
-		ADDED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml:26:13-41
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml:28:13-32:29
-action#android.intent.action.MAIN
-ADDED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml:29:17-69
-	android:name
-		ADDED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml:29:25-66
-category#android.intent.category.LAUNCHER
-ADDED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml:31:17-77
-	android:name
-		ADDED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml:31:27-74
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:29:13-41
 activity#com.google.android.gms.samples.vision.barcodereader.BarcodeCaptureActivity
-ADDED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml:35:9-36:43
+ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:31:9-33:44
 	android:label
-		ADDED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml:36:13-41
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:33:13-41
 	android:name
-		ADDED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml:35:19-57
-uses-sdk
-INJECTED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:support-v4:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-media-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-fragment:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-media-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.google.android.gms:play-services-vision:9.4.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/9.4.0/AndroidManifest.xml:4:5-42
-MERGED from [com.google.android.gms:play-services-base:9.4.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-media-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-fragment:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-media-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.google.android.gms:play-services-tasks:9.4.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.4.0/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-media-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-fragment:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-media-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.google.android.gms:play-services-basement:9.4.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.4.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-media-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-fragment:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-media-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:design:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/design/24.2.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-vector-drawable:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.0/AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:animated-vector-drawable:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.0/AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-v4:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-media-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-fragment:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-media-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-v4:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-media-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-fragment:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-media-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:recyclerview-v7:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
-	tools:overrideLibrary
-		ADDED from [com.android.support:support-v4:24.2.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/AndroidManifest.xml:23:9-51
-	android:targetSdkVersion
-		INJECTED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml
-	android:minSdkVersion
-		INJECTED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/AndroidManifest.xml
-activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:9.4.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/AndroidManifest.xml:20:9-22:45
-	android:exported
-		ADDED from [com.google.android.gms:play-services-base:9.4.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/AndroidManifest.xml:22:19-43
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:32:13-51
+activity#com.google.android.gms.samples.vision.barcodereader.SplashActivity
+ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:34:9-43:20
+	android:screenOrientation
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:36:13-49
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:9.4.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/AndroidManifest.xml:21:19-78
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:37:13-63
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:9.4.0] /Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.4.0/AndroidManifest.xml:20:19-85
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:35:13-43
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:38:13-42:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:39:17-69
+	android:name
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:39:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:41:17-77
+	android:name
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:41:27-74
+activity#com.google.android.gms.samples.vision.barcodereader.HomeActivity
+ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:44:9-46:66
+	android:theme
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:46:13-63
+	android:name
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:45:13-41
+activity#com.google.android.gms.samples.vision.barcodereader.MovementRequest
+ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:47:9-49:57
+	android:label
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:48:13-45
+	android:parentActivityName
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:49:13-55
+	android:name
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:47:19-50
+activity#com.google.android.gms.samples.vision.barcodereader.MovementRequestDetails
+ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:50:9-52:70
+	android:label
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:51:13-36
+	android:parentActivityName
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:52:13-58
+	android:name
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:50:19-57
+uses-sdk
+INJECTED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.google.android.gms:play-services:9.0.1] C:\Users\escurity\.android\build-cache\cbc002c73e505f95f7d3c5e41d40f6811fd94e92\output\AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-ads:9.0.1] C:\Users\escurity\.android\build-cache\8dc991445b27bcec3fa4fa919c4858d91529900f\output\AndroidManifest.xml:19:5-42
+MERGED from [com.google.android.gms:play-services-ads-lite:9.0.1] C:\Users\escurity\.android\build-cache\cfb655225856bc613f638680734ea36925a03b92\output\AndroidManifest.xml:23:5-42
+MERGED from [com.google.android.gms:play-services-analytics:9.0.1] C:\Users\escurity\.android\build-cache\411a30b8a35e8573de346fd59c5f18ef846e5b6e\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-appinvite:9.0.1] C:\Users\escurity\.android\build-cache\64a58068b7bca5d773421db85881059685248e88\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-auth:9.0.1] C:\Users\escurity\.android\build-cache\b8f6a72d630a538c09a925a674d8ff2531611a64\output\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-cast:9.0.1] C:\Users\escurity\.android\build-cache\47ee912ed84438cf37afde57eba81ac5824e9d10\output\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:mediarouter-v7:23.0.0] C:\Users\escurity\.android\build-cache\751ced6710c4968149d68b3dc90a2dfbf136919b\output\AndroidManifest.xml:20:5-43
+MERGED from [com.google.firebase:firebase-config:9.0.1] C:\Users\escurity\.android\build-cache\d9eb93a838ff3eeb79b32de12eaada0fe93c26ed\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-crash:9.0.1] C:\Users\escurity\.android\build-cache\a367cc9efbd4e96baa2340ef7e6ecd05e36f34f0\output\AndroidManifest.xml:22:5-42
+MERGED from [com.google.firebase:firebase-auth:9.0.1] C:\Users\escurity\.android\build-cache\e7b43f465c56906bfc3525d3047c2a0692316fcf\output\AndroidManifest.xml:18:5-43
+MERGED from [com.google.firebase:firebase-auth-common:9.0.1] C:\Users\escurity\.android\build-cache\7e9f99c51df65e282458563b31fa1c147b68a6ce\output\AndroidManifest.xml:18:5-43
+MERGED from [com.google.firebase:firebase-auth-module:9.0.1] C:\Users\escurity\.android\build-cache\549b3b332cf404080147d5b6508f9d3d26648674\output\AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-database:9.0.1] C:\Users\escurity\.android\build-cache\f32627f63931e2db07d30cfe5c2e704b081ff271\output\AndroidManifest.xml:5:5-43
+MERGED from [com.google.firebase:firebase-database-connection:9.0.1] C:\Users\escurity\.android\build-cache\4eea721ab11dffb6b64ed69d933026d6aa7af727\output\AndroidManifest.xml:5:5-43
+MERGED from [com.google.firebase:firebase-messaging:9.0.1] C:\Users\escurity\.android\build-cache\a4781d652c2f11371a82d82aedefa8d67c440865\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-storage:9.0.1] C:\Users\escurity\.android\build-cache\3048e8808e2004048f91ed06be89662c433d47a3\output\AndroidManifest.xml:5:5-43
+MERGED from [com.google.firebase:firebase-storage-common:9.0.1] C:\Users\escurity\.android\build-cache\da5adb14b5c2fb5c18b102285a785f39e93d3bad\output\AndroidManifest.xml:5:5-43
+MERGED from [com.google.android.gms:play-services-fitness:9.0.1] C:\Users\escurity\.android\build-cache\e5cfd62256c8a0970a4b7ea1b1263a1da85f81d3\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-games:9.0.1] C:\Users\escurity\.android\build-cache\1cee5b705f2556dda058b7a3e4c1b34959aa1d34\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-drive:9.0.1] C:\Users\escurity\.android\build-cache\fe462692821a4ee01ac1695376f98cfb0268ec04\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-gcm:9.0.1] C:\Users\escurity\.android\build-cache\00fe55a7fc6a9a624a39cfb8e016f8dce377857e\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-appindexing:9.0.1] C:\Users\escurity\.android\build-cache\7982f370fbd6f583d7692fe16a77460540ad7bfe\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-iid:9.0.1] C:\Users\escurity\.android\build-cache\4b76141a0a461d2faec96df6ff100e14c705559a\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-location:9.0.1] C:\Users\escurity\.android\build-cache\ac00a25658ab5f7a948721947fb5a2427a2fed23\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-nearby:9.0.1] C:\Users\escurity\.android\build-cache\77309131b1632c81049753a8f380130d22f404c8\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-panorama:9.0.1] C:\Users\escurity\.android\build-cache\7e0521613b709be6f166121e13d2ab9f14a373a7\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-plus:9.0.1] C:\Users\escurity\.android\build-cache\b40b05e4141af0f989f4578397f37b993af72907\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-auth-base:9.0.1] C:\Users\escurity\.android\build-cache\0235c4940cf52fe32bd0dbe5ecf5e3fe4e4d8ebf\output\AndroidManifest.xml:5:5-43
+MERGED from [com.google.android.gms:play-services-safetynet:9.0.1] C:\Users\escurity\.android\build-cache\f49cdbbcdbe0c536e699cdffe6bb0fae90d729a5\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-tagmanager:9.0.1] C:\Users\escurity\.android\build-cache\9aa0a8ec30d9ddc6665c0a75b06a442f925f380a\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-analytics-impl:9.0.1] C:\Users\escurity\.android\build-cache\40efdc5e4eb80aadc6a64cedfb0de99c1bd23784\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-tagmanager-api:9.0.1] C:\Users\escurity\.android\build-cache\d60da46d518d5f217f89dad3477e433fdc182e97\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-analytics:9.0.1] C:\Users\escurity\.android\build-cache\c2b588a794c36e0468a5720ff3a9fce124e12533\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-analytics-impl:9.0.1] C:\Users\escurity\.android\build-cache\db8181c79246a0a7ca9f2469bc5ba05063a35899\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-iid:9.0.1] C:\Users\escurity\.android\build-cache\d3d3686e93cee2ddb2f766a2b084f527e2790c23\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-vision:9.0.1] C:\Users\escurity\.android\build-cache\d0a260b6d63bc2ce2a88d5cd31c19d5c4d4f077f\output\AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-wallet:9.0.1] C:\Users\escurity\.android\build-cache\fe34054a30e1905ae8fce919a0c82cc1dbbb354f\output\AndroidManifest.xml:19:5-42
+MERGED from [com.google.android.gms:play-services-identity:9.0.1] C:\Users\escurity\.android\build-cache\4f20e821730a2bce46ef52bf360ba209cc5bc7f8\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-maps:9.0.1] C:\Users\escurity\.android\build-cache\855451cfe6277e5319c02b20902b717c1661e5ad\output\AndroidManifest.xml:26:5-42
+MERGED from [com.google.android.gms:play-services-wearable:9.0.1] C:\Users\escurity\.android\build-cache\333d3a56450cc253a36cd6701b5a24a57e725c46\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:9.0.1] C:\Users\escurity\.android\build-cache\6b164f874e1529d7e3cf0f85a953d498cf1bcb9a\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-common:9.0.1] C:\Users\escurity\.android\build-cache\3633a47d372fea598c33a18c2493ca841c9abc73\output\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:9.0.1] C:\Users\escurity\.android\build-cache\8bc985cce2ed47adfc5716d40719d7abbf8e0989\output\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:9.0.1] C:\Users\escurity\.android\build-cache\813d7c08e60f5771412596d4e2e2517f17f313e8\output\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:design:24.2.0] C:\Users\escurity\.android\build-cache\75082d9e55fc9f729a9c46d81cbe7678800c4985\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:24.2.0] C:\Users\escurity\.android\build-cache\7898a38eb62242343c711762484b9f2d07ee1cec\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:24.2.0] C:\Users\escurity\.android\build-cache\e84473fef836a71ce20c542f0ad8f42fd33114fa\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:24.2.0] C:\Users\escurity\.android\build-cache\298308a90a91adc2fb035dfe3c5f1e164ef721cb\output\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-v4:24.2.0] C:\Users\escurity\.android\build-cache\9d172b14055453f251b04c1e1d5cc9763093ebeb\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:24.2.0] C:\Users\escurity\.android\build-cache\4955f4006df67acaa3e06ebf14e8a79be3cc23cb\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:24.2.0] C:\Users\escurity\.android\build-cache\2dacb18a47e04af5b2b43d8b5d5680227a7c1c98\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-media-compat:24.2.0] C:\Users\escurity\.android\build-cache\1c72c396049410503c452b30bbfbfa7702c27462\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:recyclerview-v7:24.2.0] C:\Users\escurity\.android\build-cache\bcf665dbbc6e7123d57fc70a8594e0725a1cb3f9\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-core-ui:24.2.0] C:\Users\escurity\.android\build-cache\00d47c721b8ea4e9c050f8ff4e2d10750b4099fb\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:24.2.0] C:\Users\escurity\.android\build-cache\bdcd63592e4fc18e69de4e5bf72886bc445f24d7\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\escurity\.android\build-cache\37989257a13fb77ea0ecf691d78865561aea9fdc\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:multidex:1.0.1] C:\Users\escurity\.android\build-cache\ab0c811ebb60ce92691718e545df23c5330a60ab\output\AndroidManifest.xml:18:5-42
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:24.2.0] C:\Users\escurity\.android\build-cache\7898a38eb62242343c711762484b9f2d07ee1cec\output\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml
+activity#com.google.android.gms.ads.AdActivity
+ADDED from [com.google.android.gms:play-services-ads-lite:9.0.1] C:\Users\escurity\.android\build-cache\cfb655225856bc613f638680734ea36925a03b92\output\AndroidManifest.xml:26:9-29:64
+	android:configChanges
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.0.1] C:\Users\escurity\.android\build-cache\cfb655225856bc613f638680734ea36925a03b92\output\AndroidManifest.xml:28:13-122
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.0.1] C:\Users\escurity\.android\build-cache\cfb655225856bc613f638680734ea36925a03b92\output\AndroidManifest.xml:29:13-61
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.0.1] C:\Users\escurity\.android\build-cache\cfb655225856bc613f638680734ea36925a03b92\output\AndroidManifest.xml:27:13-65
+activity#com.google.android.gms.ads.purchase.InAppPurchaseActivity
+ADDED from [com.google.android.gms:play-services-ads-lite:9.0.1] C:\Users\escurity\.android\build-cache\cfb655225856bc613f638680734ea36925a03b92\output\AndroidManifest.xml:30:9-31:52
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.0.1] C:\Users\escurity\.android\build-cache\cfb655225856bc613f638680734ea36925a03b92\output\AndroidManifest.xml:31:13-50
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.0.1] C:\Users\escurity\.android\build-cache\cfb655225856bc613f638680734ea36925a03b92\output\AndroidManifest.xml:30:19-91
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.android.gms:play-services-analytics:9.0.1] C:\Users\escurity\.android\build-cache\411a30b8a35e8573de346fd59c5f18ef846e5b6e\output\AndroidManifest.xml:25:5-67
+MERGED from [com.google.android.gms:play-services-analytics-impl:9.0.1] C:\Users\escurity\.android\build-cache\40efdc5e4eb80aadc6a64cedfb0de99c1bd23784\output\AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-analytics:9.0.1] C:\Users\escurity\.android\build-cache\c2b588a794c36e0468a5720ff3a9fce124e12533\output\AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:9.0.1] C:\Users\escurity\.android\build-cache\db8181c79246a0a7ca9f2469bc5ba05063a35899\output\AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-iid:9.0.1] C:\Users\escurity\.android\build-cache\d3d3686e93cee2ddb2f766a2b084f527e2790c23\output\AndroidManifest.xml:22:5-68
+	android:name
+		ADDED from [com.google.android.gms:play-services-analytics:9.0.1] C:\Users\escurity\.android\build-cache\411a30b8a35e8573de346fd59c5f18ef846e5b6e\output\AndroidManifest.xml:25:22-65
+activity#com.google.android.gms.appinvite.PreviewActivity
+ADDED from [com.google.android.gms:play-services-appinvite:9.0.1] C:\Users\escurity\.android\build-cache\64a58068b7bca5d773421db85881059685248e88\output\AndroidManifest.xml:21:9-29:20
+	android:exported
+		ADDED from [com.google.android.gms:play-services-appinvite:9.0.1] C:\Users\escurity\.android\build-cache\64a58068b7bca5d773421db85881059685248e88\output\AndroidManifest.xml:23:17-40
+	android:theme
+		ADDED from [com.google.android.gms:play-services-appinvite:9.0.1] C:\Users\escurity\.android\build-cache\64a58068b7bca5d773421db85881059685248e88\output\AndroidManifest.xml:24:17-63
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:9.0.1] C:\Users\escurity\.android\build-cache\64a58068b7bca5d773421db85881059685248e88\output\AndroidManifest.xml:22:17-48
+intent-filter#android.intent.category.DEFAULT+com.google.android.gms.appinvite.ACTION_PREVIEW
+ADDED from [com.google.android.gms:play-services-appinvite:9.0.1] C:\Users\escurity\.android\build-cache\64a58068b7bca5d773421db85881059685248e88\output\AndroidManifest.xml:25:13-28:29
+action#com.google.android.gms.appinvite.ACTION_PREVIEW
+ADDED from [com.google.android.gms:play-services-appinvite:9.0.1] C:\Users\escurity\.android\build-cache\64a58068b7bca5d773421db85881059685248e88\output\AndroidManifest.xml:26:17-89
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:9.0.1] C:\Users\escurity\.android\build-cache\64a58068b7bca5d773421db85881059685248e88\output\AndroidManifest.xml:26:25-87
+category#android.intent.category.DEFAULT
+ADDED from [com.google.android.gms:play-services-appinvite:9.0.1] C:\Users\escurity\.android\build-cache\64a58068b7bca5d773421db85881059685248e88\output\AndroidManifest.xml:27:17-75
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:9.0.1] C:\Users\escurity\.android\build-cache\64a58068b7bca5d773421db85881059685248e88\output\AndroidManifest.xml:27:27-73
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:9.0.1] C:\Users\escurity\.android\build-cache\b8f6a72d630a538c09a925a674d8ff2531611a64\output\AndroidManifest.xml:21:9-24:46
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:9.0.1] C:\Users\escurity\.android\build-cache\b8f6a72d630a538c09a925a674d8ff2531611a64\output\AndroidManifest.xml:23:19-52
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:9.0.1] C:\Users\escurity\.android\build-cache\b8f6a72d630a538c09a925a674d8ff2531611a64\output\AndroidManifest.xml:24:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:9.0.1] C:\Users\escurity\.android\build-cache\b8f6a72d630a538c09a925a674d8ff2531611a64\output\AndroidManifest.xml:22:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:9.0.1] C:\Users\escurity\.android\build-cache\b8f6a72d630a538c09a925a674d8ff2531611a64\output\AndroidManifest.xml:21:19-68
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:9.0.1] C:\Users\escurity\.android\build-cache\b8f6a72d630a538c09a925a674d8ff2531611a64\output\AndroidManifest.xml:28:9-31:110
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:9.0.1] C:\Users\escurity\.android\build-cache\b8f6a72d630a538c09a925a674d8ff2531611a64\output\AndroidManifest.xml:30:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:9.0.1] C:\Users\escurity\.android\build-cache\b8f6a72d630a538c09a925a674d8ff2531611a64\output\AndroidManifest.xml:31:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:9.0.1] C:\Users\escurity\.android\build-cache\b8f6a72d630a538c09a925a674d8ff2531611a64\output\AndroidManifest.xml:29:13-58
+service#com.google.firebase.crash.internal.service.FirebaseCrashReceiverService
+ADDED from [com.google.firebase:firebase-crash:9.0.1] C:\Users\escurity\.android\build-cache\a367cc9efbd4e96baa2340ef7e6ecd05e36f34f0\output\AndroidManifest.xml:26:9-27:50
+	android:process
+		ADDED from [com.google.firebase:firebase-crash:9.0.1] C:\Users\escurity\.android\build-cache\a367cc9efbd4e96baa2340ef7e6ecd05e36f34f0\output\AndroidManifest.xml:27:13-48
+	android:name
+		ADDED from [com.google.firebase:firebase-crash:9.0.1] C:\Users\escurity\.android\build-cache\a367cc9efbd4e96baa2340ef7e6ecd05e36f34f0\output\AndroidManifest.xml:26:18-79
+service#com.google.firebase.crash.internal.service.FirebaseCrashSenderService
+ADDED from [com.google.firebase:firebase-crash:9.0.1] C:\Users\escurity\.android\build-cache\a367cc9efbd4e96baa2340ef7e6ecd05e36f34f0\output\AndroidManifest.xml:29:9-30:50
+	android:process
+		ADDED from [com.google.firebase:firebase-crash:9.0.1] C:\Users\escurity\.android\build-cache\a367cc9efbd4e96baa2340ef7e6ecd05e36f34f0\output\AndroidManifest.xml:30:13-48
+	android:name
+		ADDED from [com.google.firebase:firebase-crash:9.0.1] C:\Users\escurity\.android\build-cache\a367cc9efbd4e96baa2340ef7e6ecd05e36f34f0\output\AndroidManifest.xml:29:18-77
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:9.0.1] C:\Users\escurity\.android\build-cache\a4781d652c2f11371a82d82aedefa8d67c440865\output\AndroidManifest.xml:24:9-30:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:9.0.1] C:\Users\escurity\.android\build-cache\a4781d652c2f11371a82d82aedefa8d67c440865\output\AndroidManifest.xml:26:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:9.0.1] C:\Users\escurity\.android\build-cache\a4781d652c2f11371a82d82aedefa8d67c440865\output\AndroidManifest.xml:25:13-82
+intent-filter#com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:9.0.1] C:\Users\escurity\.android\build-cache\a4781d652c2f11371a82d82aedefa8d67c440865\output\AndroidManifest.xml:27:13-29:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-messaging:9.0.1] C:\Users\escurity\.android\build-cache\a4781d652c2f11371a82d82aedefa8d67c440865\output\AndroidManifest.xml:27:28-51
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:9.0.1] C:\Users\escurity\.android\build-cache\a4781d652c2f11371a82d82aedefa8d67c440865\output\AndroidManifest.xml:28:17-78
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:9.0.1] C:\Users\escurity\.android\build-cache\a4781d652c2f11371a82d82aedefa8d67c440865\output\AndroidManifest.xml:28:25-75
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.android.gms:play-services-gcm:9.0.1] C:\Users\escurity\.android\build-cache\00fe55a7fc6a9a624a39cfb8e016f8dce377857e\output\AndroidManifest.xml:21:5-82
+MERGED from [com.google.android.gms:play-services-iid:9.0.1] C:\Users\escurity\.android\build-cache\4b76141a0a461d2faec96df6ff100e14c705559a\output\AndroidManifest.xml:21:5-82
+MERGED from [com.google.firebase:firebase-iid:9.0.1] C:\Users\escurity\.android\build-cache\d3d3686e93cee2ddb2f766a2b084f527e2790c23\output\AndroidManifest.xml:23:5-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-gcm:9.0.1] C:\Users\escurity\.android\build-cache\00fe55a7fc6a9a624a39cfb8e016f8dce377857e\output\AndroidManifest.xml:21:22-79
+service#com.google.android.gms.tagmanager.TagManagerService
+ADDED from [com.google.android.gms:play-services-tagmanager-api:9.0.1] C:\Users\escurity\.android\build-cache\d60da46d518d5f217f89dad3477e433fdc182e97\output\AndroidManifest.xml:25:9-27:42
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.0.1] C:\Users\escurity\.android\build-cache\d60da46d518d5f217f89dad3477e433fdc182e97\output\AndroidManifest.xml:27:17-39
+	android:exported
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.0.1] C:\Users\escurity\.android\build-cache\d60da46d518d5f217f89dad3477e433fdc182e97\output\AndroidManifest.xml:26:17-41
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.0.1] C:\Users\escurity\.android\build-cache\d60da46d518d5f217f89dad3477e433fdc182e97\output\AndroidManifest.xml:25:18-84
+activity#com.google.android.gms.tagmanager.TagManagerPreviewActivity
+ADDED from [com.google.android.gms:play-services-tagmanager-api:9.0.1] C:\Users\escurity\.android\build-cache\d60da46d518d5f217f89dad3477e433fdc182e97\output\AndroidManifest.xml:28:9-37:20
+	android:noHistory
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.0.1] C:\Users\escurity\.android\build-cache\d60da46d518d5f217f89dad3477e433fdc182e97\output\AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.0.1] C:\Users\escurity\.android\build-cache\d60da46d518d5f217f89dad3477e433fdc182e97\output\AndroidManifest.xml:29:13-87
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from [com.google.android.gms:play-services-tagmanager-api:9.0.1] C:\Users\escurity\.android\build-cache\d60da46d518d5f217f89dad3477e433fdc182e97\output\AndroidManifest.xml:31:13-36:29
+data
+ADDED from [com.google.android.gms:play-services-tagmanager-api:9.0.1] C:\Users\escurity\.android\build-cache\d60da46d518d5f217f89dad3477e433fdc182e97\output\AndroidManifest.xml:32:17-72
+	android:scheme
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.0.1] C:\Users\escurity\.android\build-cache\d60da46d518d5f217f89dad3477e433fdc182e97\output\AndroidManifest.xml:32:23-69
+action#android.intent.action.VIEW
+ADDED from [com.google.android.gms:play-services-tagmanager-api:9.0.1] C:\Users\escurity\.android\build-cache\d60da46d518d5f217f89dad3477e433fdc182e97\output\AndroidManifest.xml:33:17-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.0.1] C:\Users\escurity\.android\build-cache\d60da46d518d5f217f89dad3477e433fdc182e97\output\AndroidManifest.xml:33:25-66
+category#android.intent.category.BROWSABLE
+ADDED from [com.google.android.gms:play-services-tagmanager-api:9.0.1] C:\Users\escurity\.android\build-cache\d60da46d518d5f217f89dad3477e433fdc182e97\output\AndroidManifest.xml:35:17-77
+	android:name
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.0.1] C:\Users\escurity\.android\build-cache\d60da46d518d5f217f89dad3477e433fdc182e97\output\AndroidManifest.xml:35:27-75
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:9.0.1] C:\Users\escurity\.android\build-cache\c2b588a794c36e0468a5720ff3a9fce124e12533\output\AndroidManifest.xml:28:7-34:18
+MERGED from [com.google.firebase:firebase-analytics-impl:9.0.1] C:\Users\escurity\.android\build-cache\db8181c79246a0a7ca9f2469bc5ba05063a35899\output\AndroidManifest.xml:28:7-34:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:9.0.1] C:\Users\escurity\.android\build-cache\c2b588a794c36e0468a5720ff3a9fce124e12533\output\AndroidManifest.xml:30:11-33
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:9.0.1] C:\Users\escurity\.android\build-cache\c2b588a794c36e0468a5720ff3a9fce124e12533\output\AndroidManifest.xml:29:11-83
+intent-filter#com.google.android.gms.measurement.UPLOAD
+ADDED from [com.google.firebase:firebase-analytics:9.0.1] C:\Users\escurity\.android\build-cache\c2b588a794c36e0468a5720ff3a9fce124e12533\output\AndroidManifest.xml:31:9-33:25
+action#com.google.android.gms.measurement.UPLOAD
+ADDED from [com.google.firebase:firebase-analytics:9.0.1] C:\Users\escurity\.android\build-cache\c2b588a794c36e0468a5720ff3a9fce124e12533\output\AndroidManifest.xml:32:11-77
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:9.0.1] C:\Users\escurity\.android\build-cache\c2b588a794c36e0468a5720ff3a9fce124e12533\output\AndroidManifest.xml:32:19-75
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:9.0.1] C:\Users\escurity\.android\build-cache\c2b588a794c36e0468a5720ff3a9fce124e12533\output\AndroidManifest.xml:36:7-39:37
+MERGED from [com.google.firebase:firebase-analytics-impl:9.0.1] C:\Users\escurity\.android\build-cache\db8181c79246a0a7ca9f2469bc5ba05063a35899\output\AndroidManifest.xml:36:7-39:37
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:9.0.1] C:\Users\escurity\.android\build-cache\c2b588a794c36e0468a5720ff3a9fce124e12533\output\AndroidManifest.xml:38:11-33
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:9.0.1] C:\Users\escurity\.android\build-cache\c2b588a794c36e0468a5720ff3a9fce124e12533\output\AndroidManifest.xml:39:11-35
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:9.0.1] C:\Users\escurity\.android\build-cache\c2b588a794c36e0468a5720ff3a9fce124e12533\output\AndroidManifest.xml:37:11-82
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:9.0.1] C:\Users\escurity\.android\build-cache\d3d3686e93cee2ddb2f766a2b084f527e2790c23\output\AndroidManifest.xml:25:5-26:47
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:9.0.1] C:\Users\escurity\.android\build-cache\d3d3686e93cee2ddb2f766a2b084f527e2790c23\output\AndroidManifest.xml:26:9-44
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.0.1] C:\Users\escurity\.android\build-cache\d3d3686e93cee2ddb2f766a2b084f527e2790c23\output\AndroidManifest.xml:25:17-71
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:9.0.1] C:\Users\escurity\.android\build-cache\d3d3686e93cee2ddb2f766a2b084f527e2790c23\output\AndroidManifest.xml:28:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.0.1] C:\Users\escurity\.android\build-cache\d3d3686e93cee2ddb2f766a2b084f527e2790c23\output\AndroidManifest.xml:28:22-76
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:9.0.1] C:\Users\escurity\.android\build-cache\d3d3686e93cee2ddb2f766a2b084f527e2790c23\output\AndroidManifest.xml:32:9-41:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:9.0.1] C:\Users\escurity\.android\build-cache\d3d3686e93cee2ddb2f766a2b084f527e2790c23\output\AndroidManifest.xml:34:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:9.0.1] C:\Users\escurity\.android\build-cache\d3d3686e93cee2ddb2f766a2b084f527e2790c23\output\AndroidManifest.xml:35:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.0.1] C:\Users\escurity\.android\build-cache\d3d3686e93cee2ddb2f766a2b084f527e2790c23\output\AndroidManifest.xml:33:13-78
+intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION
+ADDED from [com.google.firebase:firebase-iid:9.0.1] C:\Users\escurity\.android\build-cache\d3d3686e93cee2ddb2f766a2b084f527e2790c23\output\AndroidManifest.xml:36:13-40:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:9.0.1] C:\Users\escurity\.android\build-cache\d3d3686e93cee2ddb2f766a2b084f527e2790c23\output\AndroidManifest.xml:37:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.0.1] C:\Users\escurity\.android\build-cache\d3d3686e93cee2ddb2f766a2b084f527e2790c23\output\AndroidManifest.xml:37:25-78
+action#com.google.android.c2dm.intent.REGISTRATION
+ADDED from [com.google.firebase:firebase-iid:9.0.1] C:\Users\escurity\.android\build-cache\d3d3686e93cee2ddb2f766a2b084f527e2790c23\output\AndroidManifest.xml:38:17-86
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.0.1] C:\Users\escurity\.android\build-cache\d3d3686e93cee2ddb2f766a2b084f527e2790c23\output\AndroidManifest.xml:38:25-83
+category#${applicationId}
+ADDED from [com.google.firebase:firebase-iid:9.0.1] C:\Users\escurity\.android\build-cache\d3d3686e93cee2ddb2f766a2b084f527e2790c23\output\AndroidManifest.xml:39:17-61
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.0.1] C:\Users\escurity\.android\build-cache\d3d3686e93cee2ddb2f766a2b084f527e2790c23\output\AndroidManifest.xml:39:27-58
+receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
+ADDED from [com.google.firebase:firebase-iid:9.0.1] C:\Users\escurity\.android\build-cache\d3d3686e93cee2ddb2f766a2b084f527e2790c23\output\AndroidManifest.xml:45:9-47:40
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:9.0.1] C:\Users\escurity\.android\build-cache\d3d3686e93cee2ddb2f766a2b084f527e2790c23\output\AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.0.1] C:\Users\escurity\.android\build-cache\d3d3686e93cee2ddb2f766a2b084f527e2790c23\output\AndroidManifest.xml:46:13-86
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:9.0.1] C:\Users\escurity\.android\build-cache\d3d3686e93cee2ddb2f766a2b084f527e2790c23\output\AndroidManifest.xml:51:9-57:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:9.0.1] C:\Users\escurity\.android\build-cache\d3d3686e93cee2ddb2f766a2b084f527e2790c23\output\AndroidManifest.xml:53:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.0.1] C:\Users\escurity\.android\build-cache\d3d3686e93cee2ddb2f766a2b084f527e2790c23\output\AndroidManifest.xml:52:13-77
+intent-filter#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:9.0.1] C:\Users\escurity\.android\build-cache\d3d3686e93cee2ddb2f766a2b084f527e2790c23\output\AndroidManifest.xml:54:13-56:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:9.0.1] C:\Users\escurity\.android\build-cache\d3d3686e93cee2ddb2f766a2b084f527e2790c23\output\AndroidManifest.xml:54:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:9.0.1] C:\Users\escurity\.android\build-cache\d3d3686e93cee2ddb2f766a2b084f527e2790c23\output\AndroidManifest.xml:55:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.0.1] C:\Users\escurity\.android\build-cache\d3d3686e93cee2ddb2f766a2b084f527e2790c23\output\AndroidManifest.xml:55:25-77
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:9.0.1] C:\Users\escurity\.android\build-cache\855451cfe6277e5319c02b20902b717c1661e5ad\output\AndroidManifest.xml:22:5-24:33
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:9.0.1] C:\Users\escurity\.android\build-cache\855451cfe6277e5319c02b20902b717c1661e5ad\output\AndroidManifest.xml:23:8-40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:9.0.1] C:\Users\escurity\.android\build-cache\855451cfe6277e5319c02b20902b717c1661e5ad\output\AndroidManifest.xml:24:8-31
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:9.0.1] C:\Users\escurity\.android\build-cache\6b164f874e1529d7e3cf0f85a953d498cf1bcb9a\output\AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:9.0.1] C:\Users\escurity\.android\build-cache\6b164f874e1529d7e3cf0f85a953d498cf1bcb9a\output\AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:9.0.1] C:\Users\escurity\.android\build-cache\6b164f874e1529d7e3cf0f85a953d498cf1bcb9a\output\AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:9.0.1] C:\Users\escurity\.android\build-cache\6b164f874e1529d7e3cf0f85a953d498cf1bcb9a\output\AndroidManifest.xml:20:19-85
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:9.0.1] C:\Users\escurity\.android\build-cache\3633a47d372fea598c33a18c2493ca841c9abc73\output\AndroidManifest.xml:7:9-11:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:9.0.1] C:\Users\escurity\.android\build-cache\3633a47d372fea598c33a18c2493ca841c9abc73\output\AndroidManifest.xml:8:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:9.0.1] C:\Users\escurity\.android\build-cache\3633a47d372fea598c33a18c2493ca841c9abc73\output\AndroidManifest.xml:10:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:9.0.1] C:\Users\escurity\.android\build-cache\3633a47d372fea598c33a18c2493ca841c9abc73\output\AndroidManifest.xml:11:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:9.0.1] C:\Users\escurity\.android\build-cache\3633a47d372fea598c33a18c2493ca841c9abc73\output\AndroidManifest.xml:9:13-58
