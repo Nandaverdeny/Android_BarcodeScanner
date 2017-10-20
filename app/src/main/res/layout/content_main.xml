@@ -11,7 +11,7 @@
     tools:showIn="@layout/app_bar_main"
     tools:layout_editor_absoluteY="81dp"
     tools:layout_editor_absoluteX="0dp"
-    android:background="#000000">
+    android:background="#eef5f9">
 
     <Button
         android:id="@+id/movementrequest"
@@ -23,6 +23,7 @@
         android:background="@android:color/background_light"
         android:text="Movement Request"
         android:textSize="20dp"
+        android:fontFamily="monospace"
         app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

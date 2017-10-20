@@ -1,6 +1,7 @@
 package com.google.android.gms.samples.vision.barcodereader;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -22,9 +23,10 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class MovementRequest extends AppCompatActivity {
+public class MovementRequest extends AppCompatActivity  {
     ListView listView ;
     ArrayList<HashMap<String,String>> movementlist;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,10 +46,14 @@ public class MovementRequest extends AppCompatActivity {
                     JSONArray jsonArray = data.optJSONArray("obj");
                     for (int i = 0; i < jsonArray.length(); i++) {
                         JSONObject jb = jsonArray.getJSONObject(i);
-                        String ID = jb.optString("ID");
-                        String Description = jb.optString("Description");
-                        String Location = jb.optString("LocationName");
-                        String MovementDate = jb.optString("MovementDate");
+                        JSONObject movement = jb.getJSONObject("MovementRequest");
+
+                        String ID = movement.optString("ID");
+                        String Description = movement.optString("Description");
+                        String Location = movement.optString("LocationName");
+                        String MovementDate = movement.optString("MovementDate");
+
+
 
 
 
@@ -56,6 +62,8 @@ public class MovementRequest extends AppCompatActivity {
                         mv.put("description", Description);
                         mv.put("location",Location)     ;
                         mv.put("movementdate",MovementDate);
+
+
                         movementlist.add(mv);
 
                     }
@@ -95,16 +103,28 @@ public class MovementRequest extends AppCompatActivity {
                 }
             });
 
-
-
         }
 
     }
 
     public  String makeServiceCall(){
         try {
-            URL url = new URL("http://192.168.1.5:8080/api/movementrequest/getall");
+            SharedPreferences user = getSharedPreferences("UserStore",MODE_PRIVATE);
+            String departmentid = user.getString("DepartmentID",null);
+            URL url;
+            if(departmentid!= null)
+            {
+                url = new URL("http://escurity001:1130/api/movementrequest/getmovementrequesttomove");
+
+            }
+            else
+            {
+                url = new URL("http://Escurity001:1330/api/movementrequest/getmovementrequesttomovebydepartment/"+ Integer.parseInt(departmentid));
+            }
+
+
             HttpURLConnection urlConnection = (HttpURLConnection   ) url.openConnection();
+            urlConnection.setRequestProperty("Content-Type", "application/json;charset=utf-8");
             try {
                 BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
                 StringBuilder stringBuilder = new StringBuilder();

@@ -5,13 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.google.android.gms.samples.vision.barcodereader.MovementRequest"
-    android:background="#000000">
+    android:background="#eef5f9">
 
     <ListView
         android:id="@+id/movementlist"
         android:layout_width="368dp"
         android:layout_height="495dp"
-        android:background="@color/colorAccent"
+        android:background="#eef5f9"
+
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp" />
 </android.support.constraint.ConstraintLayout>

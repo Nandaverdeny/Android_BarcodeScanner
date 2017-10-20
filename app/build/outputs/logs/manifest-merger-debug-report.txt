@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:2:1-55:12
+ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:2:1-67:12
 	package
 		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:3:5-66
 		INJECTED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml
@@ -52,8 +52,20 @@ MERGED from [com.google.firebase:firebase-iid:9.0.1] C:\Users\escurity\.android\
 MERGED from [com.google.android.gms:play-services-maps:9.0.1] C:\Users\escurity\.android\build-cache\855451cfe6277e5319c02b20902b717c1661e5ad\output\AndroidManifest.xml:20:5-78
 	android:name
 		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:10:22-76
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:12:5-71
+	android:name
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:12:22-68
+uses-permission#android.permission.READ_PROFILE
+ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:13:5-71
+	android:name
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:13:22-68
+uses-permission#android.permission.READ_CONTACTS
+ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:14:5-72
+	android:name
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:14:22-69
 application
-ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:12:5-53:19
+ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:15:5-65:19
 MERGED from [com.google.android.gms:play-services:9.0.1] C:\Users\escurity\.android\build-cache\cbc002c73e505f95f7d3c5e41d40f6811fd94e92\output\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-ads-lite:9.0.1] C:\Users\escurity\.android\build-cache\cfb655225856bc613f638680734ea36925a03b92\output\AndroidManifest.xml:24:5-32:19
 MERGED from [com.google.android.gms:play-services-analytics:9.0.1] C:\Users\escurity\.android\build-cache\411a30b8a35e8573de346fd59c5f18ef846e5b6e\output\AndroidManifest.xml:27:5-20
@@ -98,92 +110,105 @@ MERGED from [com.android.support:support-v4:24.2.0] C:\Users\escurity\.android\b
 MERGED from [com.android.support:support-fragment:24.2.0] C:\Users\escurity\.android\build-cache\4955f4006df67acaa3e06ebf14e8a79be3cc23cb\output\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-core-utils:24.2.0] C:\Users\escurity\.android\build-cache\2dacb18a47e04af5b2b43d8b5d5680227a7c1c98\output\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-media-compat:24.2.0] C:\Users\escurity\.android\build-cache\1c72c396049410503c452b30bbfbfa7702c27462\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:24.2.0] C:\Users\escurity\.android\build-cache\00d47c721b8ea4e9c050f8ff4e2d10750b4099fb\output\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:24.2.0] C:\Users\escurity\.android\build-cache\bdcd63592e4fc18e69de4e5bf72886bc445f24d7\output\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\escurity\.android\build-cache\37989257a13fb77ea0ecf691d78865561aea9fdc\output\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\escurity\.android\build-cache\ef779951406f4194dd61b7faf311103ef61a7608\output\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:cardview-v7:26.0.0-alpha1] C:\Users\escurity\.android\build-cache\bf21b9736a165ec0ac700eb87ca585dd4ca3e5dd\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\escurity\.android\build-cache\2cd9284d7e315647d60255be738ead122bb3108c\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\escurity\.android\build-cache\48db52c3deb38f1033b199a3f2e5f70809f76a25\output\AndroidManifest.xml:29:5-20
 	android:label
-		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:17:9-40
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:21:9-41
 	android:supportsRtl
-		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:18:9-35
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:22:9-35
 	android:hardwareAccelerated
-		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:15:9-43
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:19:9-43
 	android:fullBackupContent
-		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:14:9-42
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:18:9-42
 	android:allowBackup
-		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:13:9-35
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:17:9-35
 	android:icon
-		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:16:9-38
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:20:9-38
 	android:theme
-		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:20:9-47
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:23:9-47
 	android:name
-		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:19:9-68
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:16:9-68
 meta-data#com.google.android.gms.version
-ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:21:9-23:69
+ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:25:9-27:69
 MERGED from [com.google.android.gms:play-services-basement:9.0.1] C:\Users\escurity\.android\build-cache\813d7c08e60f5771412596d4e2e2517f17f313e8\output\AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:23:13-66
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:27:13-66
 	android:name
-		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:22:13-58
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:26:13-58
 meta-data#com.google.android.gms.vision.DEPENDENCIES
-ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:24:9-26:39
+ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:28:9-30:39
 	android:value
-		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:26:13-36
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:30:13-36
 	android:name
-		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:25:13-70
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:29:13-70
 activity#com.google.android.gms.samples.vision.barcodereader.MainActivity
-ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:28:9-30:59
+ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:32:9-34:32
 	android:label
-		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:30:13-56
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:34:13-29
 	android:name
-		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:29:13-41
-activity#com.google.android.gms.samples.vision.barcodereader.BarcodeCaptureActivity
-ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:31:9-33:44
-	android:label
 		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:33:13-41
+activity#com.google.android.gms.samples.vision.barcodereader.BarcodeCaptureActivity
+ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:35:9-37:44
+	android:label
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:37:13-41
 	android:name
-		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:32:13-51
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:36:13-51
 activity#com.google.android.gms.samples.vision.barcodereader.SplashActivity
-ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:34:9-43:20
+ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:38:9-47:20
 	android:screenOrientation
-		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:36:13-49
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:40:13-49
 	android:theme
-		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:37:13-63
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:41:13-63
 	android:name
-		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:35:13-43
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:39:13-43
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:38:13-42:29
+ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:42:13-46:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:39:17-69
+ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:43:17-69
 	android:name
-		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:39:25-66
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:43:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:41:17-77
+ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:45:17-77
 	android:name
-		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:41:27-74
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:45:27-74
 activity#com.google.android.gms.samples.vision.barcodereader.HomeActivity
-ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:44:9-46:66
+ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:48:9-51:66
+	android:label
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:50:13-45
 	android:theme
-		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:46:13-63
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:51:13-63
 	android:name
-		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:45:13-41
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:49:13-41
 activity#com.google.android.gms.samples.vision.barcodereader.MovementRequest
-ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:47:9-49:57
+ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:52:9-56:14
 	android:label
-		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:48:13-45
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:54:13-45
 	android:parentActivityName
-		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:49:13-55
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:55:13-55
 	android:name
-		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:47:19-50
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:53:13-44
 activity#com.google.android.gms.samples.vision.barcodereader.MovementRequestDetails
-ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:50:9-52:70
+ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:57:9-60:61
 	android:label
-		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:51:13-36
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:59:13-36
 	android:parentActivityName
-		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:52:13-58
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:60:13-58
 	android:name
-		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:50:19-57
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:58:13-51
+activity#com.google.android.gms.samples.vision.barcodereader.LoginActivity
+ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:61:9-64:25
+	android:label
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:62:13-45
+	android:gravity
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:63:13-37
+	android:name
+		ADDED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml:61:19-48
 uses-sdk
 INJECTED from C:\Users\escurity\AndroidStudioProjects\Android_BarcodeScanner\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:multidex:1.0.1] C:\Users\escurity\.android\build-cache\ab0c811ebb60ce92691718e545df23c5330a60ab\output\AndroidManifest.xml:18:5-42
 MERGED from [com.google.android.gms:play-services:9.0.1] C:\Users\escurity\.android\build-cache\cbc002c73e505f95f7d3c5e41d40f6811fd94e92\output\AndroidManifest.xml:4:5-42
 MERGED from [com.google.android.gms:play-services-ads:9.0.1] C:\Users\escurity\.android\build-cache\8dc991445b27bcec3fa4fa919c4858d91529900f\output\AndroidManifest.xml:19:5-42
 MERGED from [com.google.android.gms:play-services-ads-lite:9.0.1] C:\Users\escurity\.android\build-cache\cfb655225856bc613f638680734ea36925a03b92\output\AndroidManifest.xml:23:5-42
@@ -237,11 +262,12 @@ MERGED from [com.android.support:support-v4:24.2.0] C:\Users\escurity\.android\b
 MERGED from [com.android.support:support-fragment:24.2.0] C:\Users\escurity\.android\build-cache\4955f4006df67acaa3e06ebf14e8a79be3cc23cb\output\AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:support-core-utils:24.2.0] C:\Users\escurity\.android\build-cache\2dacb18a47e04af5b2b43d8b5d5680227a7c1c98\output\AndroidManifest.xml:21:5-23:61
 MERGED from [com.android.support:support-media-compat:24.2.0] C:\Users\escurity\.android\build-cache\1c72c396049410503c452b30bbfbfa7702c27462\output\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:recyclerview-v7:24.2.0] C:\Users\escurity\.android\build-cache\bcf665dbbc6e7123d57fc70a8594e0725a1cb3f9\output\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-core-ui:24.2.0] C:\Users\escurity\.android\build-cache\00d47c721b8ea4e9c050f8ff4e2d10750b4099fb\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:24.2.0] C:\Users\escurity\.android\build-cache\bdcd63592e4fc18e69de4e5bf72886bc445f24d7\output\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\escurity\.android\build-cache\37989257a13fb77ea0ecf691d78865561aea9fdc\output\AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:multidex:1.0.1] C:\Users\escurity\.android\build-cache\ab0c811ebb60ce92691718e545df23c5330a60ab\output\AndroidManifest.xml:18:5-42
+MERGED from [com.android.volley:volley:1.0.0] C:\Users\escurity\.android\build-cache\ef779951406f4194dd61b7faf311103ef61a7608\output\AndroidManifest.xml:7:5-43
+MERGED from [com.android.support:cardview-v7:26.0.0-alpha1] C:\Users\escurity\.android\build-cache\bf21b9736a165ec0ac700eb87ca585dd4ca3e5dd\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\escurity\.android\build-cache\d2dacd14335bcc9f716caf6464cf9c03293a3182\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\escurity\.android\build-cache\2cd9284d7e315647d60255be738ead122bb3108c\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\escurity\.android\build-cache\48db52c3deb38f1033b199a3f2e5f70809f76a25\output\AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:24.2.0] C:\Users\escurity\.android\build-cache\7898a38eb62242343c711762484b9f2d07ee1cec\output\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
@@ -466,3 +492,12 @@ ADDED from [com.google.firebase:firebase-common:9.0.1] C:\Users\escurity\.androi
 		ADDED from [com.google.firebase:firebase-common:9.0.1] C:\Users\escurity\.android\build-cache\3633a47d372fea598c33a18c2493ca841c9abc73\output\AndroidManifest.xml:11:13-36
 	android:name
 		ADDED from [com.google.firebase:firebase-common:9.0.1] C:\Users\escurity\.android\build-cache\3633a47d372fea598c33a18c2493ca841c9abc73\output\AndroidManifest.xml:9:13-58
+meta-data#android.support.VERSION
+ADDED from [com.android.support:cardview-v7:26.0.0-alpha1] C:\Users\escurity\.android\build-cache\bf21b9736a165ec0ac700eb87ca585dd4ca3e5dd\output\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\escurity\.android\build-cache\d2dacd14335bcc9f716caf6464cf9c03293a3182\output\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\escurity\.android\build-cache\2cd9284d7e315647d60255be738ead122bb3108c\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\escurity\.android\build-cache\48db52c3deb38f1033b199a3f2e5f70809f76a25\output\AndroidManifest.xml:25:5-27:41
+	android:value
+		ADDED from [com.android.support:cardview-v7:26.0.0-alpha1] C:\Users\escurity\.android\build-cache\bf21b9736a165ec0ac700eb87ca585dd4ca3e5dd\output\AndroidManifest.xml:24:9-38
+	android:name
+		ADDED from [com.android.support:cardview-v7:26.0.0-alpha1] C:\Users\escurity\.android\build-cache\bf21b9736a165ec0ac700eb87ca585dd4ca3e5dd\output\AndroidManifest.xml:23:9-47

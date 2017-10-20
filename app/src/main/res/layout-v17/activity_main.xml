@@ -45,7 +45,8 @@
         android:text="@string/read_barcode"
         android:id="@+id/read_barcode"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp" />
 
     <Switch
         android:layout_width="wrap_content"
@@ -66,5 +67,14 @@
         android:layout_below="@+id/list_view_barcode"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/read_barcode"
+        android:padding="11dip"
+        android:text="Submit"
+        android:layout_alignStart="@+id/use_flash" />
 
 </RelativeLayout>

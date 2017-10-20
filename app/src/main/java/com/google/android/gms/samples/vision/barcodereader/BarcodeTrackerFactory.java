@@ -15,10 +15,15 @@
  */
 package com.google.android.gms.samples.vision.barcodereader;
 
+import android.support.v4.content.res.TypedArrayUtils;
+
 import com.google.android.gms.samples.vision.barcodereader.ui.camera.GraphicOverlay;
 import com.google.android.gms.vision.MultiProcessor;
 import com.google.android.gms.vision.Tracker;
 import com.google.android.gms.vision.barcode.Barcode;
+
+import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * Factory for creating a tracker and associated graphic to be associated with a new barcode.  The
@@ -33,7 +38,12 @@ class BarcodeTrackerFactory implements MultiProcessor.Factory<Barcode> {
 
     @Override
     public Tracker<Barcode> create(Barcode barcode) {
+        //TODO : Check barcode is loc or asset
+
+
         MainActivity.addItem(barcode.displayValue);
+
+
         BarcodeGraphic graphic = new BarcodeGraphic(mGraphicOverlay);
         return new BarcodeGraphicTracker(mGraphicOverlay, graphic);
     }

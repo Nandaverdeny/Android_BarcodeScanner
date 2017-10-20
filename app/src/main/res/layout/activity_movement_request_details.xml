@@ -1,139 +1,262 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
-    android:weightSum="1"
-    tools:context="com.google.android.gms.samples.vision.barcodereader.MovementRequestDetails">
+    android:background="#eef5f9"
+    android:weightSum="1">
 
-    <TableRow>
-        <TextView
-            android:id="@+id/textViewID"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ID"
-            android:visibility="invisible"
-            />
-    </TableRow>
-    <TableRow
 
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_weight="1"
-            android:background="#FFFFFF"
-            android:gravity="left"
-            android:text="Movement Date"
-            android:textColor="#000000"
-            android:textSize="15dp"
-            android:paddingLeft="1dip"
-            android:paddingBottom="10dip"
-            android:paddingTop="10dip"/>
-
-        <TextView
-            android:id="@+id/textViewmovementdate"
-            android:layout_weight="1"
-            android:background="#FFFFFF"
-            android:gravity="left"
-            android:text=""
-            android:textColor="#000000"
-            android:textSize="15dp"
-            android:paddingLeft="1dip"
-            android:paddingBottom="10dip"
-            android:paddingTop="10dip"/>
-    </TableRow>
-    <TableRow
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:layout_weight="1"
-            android:background="#FFFFFF"
-            android:gravity="left"
-            android:text="Description"
-            android:textColor="#000000"
-            android:textSize="15dp"
-            android:paddingLeft="1dip"
-            android:paddingBottom="10dip"
-            android:paddingTop="10dip"/>
-        <TextView
-            android:id="@+id/textViewDescription"
-            android:layout_weight="1"
-            android:background="#FFFFFF"
-            android:gravity="left"
-            android:text=""
-            android:textColor="#000000"
-            android:textSize="15dp"
-            android:paddingLeft="1dip"
-            android:paddingBottom="10dip"
-            android:paddingTop="10dip"/>
-    </TableRow>
-    <TableRow
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:layout_weight="1"
-            android:background="#FFFFFF"
-            android:gravity="left"
-            android:text="Location"
-            android:textColor="#000000"
-            android:textSize="15dp"
-            android:paddingLeft="1dip"
-            android:paddingBottom="10dip"
-            android:paddingTop="10dip"/>
-        <TextView
-            android:id="@+id/textViewlocation"
-            android:layout_weight="1"
-            android:background="#FFFFFF"
-            android:gravity="left"
-            android:text=""
-            android:textColor="#000000"
-            android:textSize="15dp"
-            android:paddingLeft="1dip"
-            android:paddingBottom="10dip"
-            android:paddingTop="10dip"/>
-    </TableRow>
-    <TableRow
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:layout_weight="1"
-            android:background="#FFFFFF"
-            android:gravity="left"
-            android:text="Notes"
-            android:textColor="#000000"
-            android:textSize="15dp"
-            android:paddingLeft="1dip"
-            android:paddingBottom="10dip"
-            android:paddingTop="10dip"/>
-        <TextView
-            android:id="@+id/textViewNotes"
-            android:layout_weight="1"
-            android:background="#FFFFFF"
-            android:gravity="left"
-            android:text=""
-            android:textColor="#000000"
-            android:textSize="15dp"
-            android:paddingLeft="1dip"
-            android:paddingBottom="10dip"
-            android:paddingTop="10dip"/>
-    </TableRow>
-
-
-    <ListView
-        android:id="@+id/viewmovementdetail"
-        style="@style/Widget.AppCompat.Light.ListView.DropDown"
-        android:layout_width="220dp"
         android:layout_height="wrap_content"
-        android:layout_span="3" />
-</TableLayout>
+        android:layout_marginRight="0dip"
+        android:layout_margin="5dip"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        app:cardCornerRadius="5dp"
+        app:contentPadding="15dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#eef5f9"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Movement Date"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/textViewmovementdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="7dip"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Description"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/textViewDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="7dip"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Location"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/textViewlocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="7dip"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Notes"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/textViewNotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="7dip"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/textViewID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="ID"
+                    android:visibility="invisible" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/textViewLocationID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="ID"
+                    android:visibility="invisible" />
+
+                <android.support.v7.widget.AppCompatTextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        app:cardCornerRadius="5dp"
+        app:contentPadding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#eef5f9"
+            android:orientation="vertical"
+            android:padding="0dp">
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:background="#dcdcdc"
+                    android:gravity="center"
+                    android:padding="7dip"
+                    android:text="Category"
+                    android:textColor="#000000"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:background="#d3d3d3"
+                    android:gravity="center"
+                    android:padding="7dip"
+                    android:text="Desc"
+                    android:textColor="#000000"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_weight="1"
+                    android:background="#cac9c9"
+                    android:gravity="center"
+                    android:padding="7dip"
+                    android:text="Qty"
+                    android:textColor="#000000"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_weight="1"
+                    android:background="#cac9c9"
+                    android:gravity="center"
+                    android:padding="7dip"
+                    android:text="Transfered"
+                    android:textColor="#000000"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:background="#cac9c9"
+                    android:gravity="center"
+                    android:padding="7dip"
+                    android:text="Action"
+                    android:textColor="#000000"
+
+                    android:textSize="10dp" />
+
+
+            </TableRow>
+
+            <ListView
+                android:id="@+id/viewmovementdetail"
+                style="@style/Widget.AppCompat.Light.ListView.DropDown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="3"
+                android:padding="0dp"
+                android:layout_margin="0dp"
+                android:focusable="true" />
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

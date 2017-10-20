@@ -35,7 +35,8 @@
         android:text="@string/read_barcode"
         android:id="@+id/read_barcode"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="65dp" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -57,5 +58,15 @@
         android:layout_alignRight="@+id/barcode_value"
         android:layout_alignEnd="@+id/barcode_value"
         android:checked="false" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="180dp"
+        android:layout_toEndOf="@+id/read_barcode"
+        android:padding="11dip"
+        android:text="Submit" />
 
 </RelativeLayout>

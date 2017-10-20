@@ -24,6 +24,10 @@
         "source": "C:\\Users\\escurity\\.android\\build-cache\\7898a38eb62242343c711762484b9f2d07ee1cec\\output\\res\\drawable\\abc_ic_voice_search_api_material.xml"
     },
     {
+        "merged": "C:\\Users\\escurity\\AndroidStudioProjects\\Android_BarcodeScanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo_login.png",
+        "source": "C:\\Users\\escurity\\AndroidStudioProjects\\Android_BarcodeScanner\\app\\src\\main\\res\\drawable\\logo_login.png"
+    },
+    {
         "merged": "C:\\Users\\escurity\\AndroidStudioProjects\\Android_BarcodeScanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
         "source": "C:\\Users\\escurity\\.android\\build-cache\\7898a38eb62242343c711762484b9f2d07ee1cec\\output\\res\\drawable\\abc_textfield_search_material.xml"
     },
@@ -62,6 +66,10 @@
     {
         "merged": "C:\\Users\\escurity\\AndroidStudioProjects\\Android_BarcodeScanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
         "source": "C:\\Users\\escurity\\.android\\build-cache\\7898a38eb62242343c711762484b9f2d07ee1cec\\output\\res\\drawable\\abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\escurity\\AndroidStudioProjects\\Android_BarcodeScanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\splash.png",
+        "source": "C:\\Users\\escurity\\AndroidStudioProjects\\Android_BarcodeScanner\\app\\src\\main\\res\\drawable\\splash.png"
     },
     {
         "merged": "C:\\Users\\escurity\\AndroidStudioProjects\\Android_BarcodeScanner\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_text_light.xml",

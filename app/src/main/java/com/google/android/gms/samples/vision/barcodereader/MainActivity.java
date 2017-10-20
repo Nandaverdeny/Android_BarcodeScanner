@@ -17,20 +17,53 @@
 package com.google.android.gms.samples.vision.barcodereader;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.app.Activity;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CompoundButton;
+import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.SimpleAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 
 import com.google.android.gms.common.api.CommonStatusCodes;
+import com.google.android.gms.drive.realtime.internal.event.ObjectChangedDetails;
 import com.google.android.gms.vision.barcode.Barcode;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedOutputStream;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.DataOutputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.net.URLEncoder;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+
+import javax.net.ssl.HttpsURLConnection;
 
 /**
  * Main activity demonstrating how to pass extra parameters to an activity that
@@ -45,7 +78,13 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private TextView barcodeValue;
     private ListView barcodeListView;
     private static ArrayList<String> listItems = new ArrayList<String>();
+
+
+
     private static ArrayAdapter<String> adapter;
+    String MovementDetailID ;
+    String LocationID;
+    String MovementID ;
 
     private static final int RC_BARCODE_CAPTURE = 9001;
     private static final String TAG = "BarcodeMain";
@@ -53,6 +92,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
     public static void addItem(String item)
     {
         if (!listItems.contains(item)) {
+
+
             listItems.add(item);
             //adapter.notifyDataSetChanged();
         }
@@ -75,6 +116,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
         useFlash = (CompoundButton) findViewById(R.id.use_flash);
 
         findViewById(R.id.read_barcode).setOnClickListener(this);
+        Intent i = getIntent();
+        MovementDetailID =   i.getStringExtra("detailid");
+        LocationID = i.getStringExtra("locationid");
+        MovementID = i.getStringExtra("movementid");
+
+        Submit();
 
     }
 
@@ -152,7 +199,156 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     public  void  Submit(){
 
+        Button button = (Button)findViewById(R.id.submit);
+        button.setOnClickListener(new View.OnClickListener(){
+            public  void  onClick (View v) {
+
+
+                try {
+                    new PostData().execute();
+
+                }
+                catch (Exception e) {
+
+                }
+
+            }
+        });
+    }
+
+    public class PostData extends AsyncTask<String, Void, String> {
+
+        public String doInBackground(String... urls) {
+
+           try
+           {
+               SharedPreferences user = getSharedPreferences("UserStore",MODE_PRIVATE);
+               URL url = new URL("http://escurity001:1130/api/assetlocation/moveasset");
+
+
+
+
+               JSONObject object = new JSONObject();
+               JSONArray jsArray = new JSONArray(listItems);
+               String createdby = user.getString("Username",null);
+               object.put("listAsset",jsArray);
+               object.put("locationID",LocationID);
+               object.put("CreatedBy",createdby);
+               object.put("MovementRequestDetailID",MovementDetailID);
+
+               HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+               connection.setRequestMethod("POST");
+               connection.setReadTimeout(1500);
+               connection.setConnectTimeout(1500);
+               connection.setRequestProperty("Content-Type", "application/json;charset=utf-8");
+               connection.setDoInput(true);
+               connection.setDoOutput(true);
+
+               DataOutputStream os = new DataOutputStream(connection.getOutputStream());
+               os.writeBytes(object.toString());
+               os.flush();
+               os.close();
+
+               int responseCode=connection.getResponseCode();
+
+
+               if (responseCode == HttpsURLConnection.HTTP_OK) {
+
+
+                   BufferedReader in=new BufferedReader(new
+                           InputStreamReader(
+                           connection.getInputStream()));
+
+                   StringBuffer sb = new StringBuffer("");
+                   String line="";
+
+                   while((line = in.readLine()) != null) {
+
+                       sb.append(line);
+                       break;
+                   }
+
+                   in.close();
+                   return sb.toString();
+
+               }
+               else {
+                   return new String("false : "+responseCode);
+               }
+
+
+
+
+           }
+           catch ( Exception e)
+           {
+               return new String("Exception: " + e.getMessage());
+           }
+
+        }
+
+
+
+
+
+        protected void onPostExecute(String result) {
+
+            try
+            {
+                JSONObject object = new JSONObject(result);
+                String success = object.getString("success");
+                String message = object.getString("message");
+                if(success == "true")
+                {
+                    Intent intent = new Intent(MainActivity.this,MovementRequestDetails.class);
+                    intent.putExtra("id",MovementID );
+                    startActivity(intent);
+                }
+                else
+                {
+                    listItems.clear();
+                    adapter.notifyDataSetChanged();
+                    statusMessage.setText(message);
+                    Toast.makeText(getApplicationContext(),
+                            message,
+                            Toast.LENGTH_LONG).show();
+                }
+
+            }
+            catch (JSONException e)
+            {
+                e.printStackTrace();
+                Toast.makeText(getApplicationContext(),
+                        "Success False",
+                        Toast.LENGTH_LONG).show();
+            }
+
+        }
 
     }
 
+    public String getPostDataString(JSONObject params) throws Exception {
+
+        StringBuilder result = new StringBuilder();
+        boolean first = true;
+
+        Iterator<String> itr = params.keys();
+
+        while(itr.hasNext()){
+
+            String key= itr.next();
+            Object value = params.get(key);
+
+            if (first)
+                first = false;
+            else
+                result.append("&");
+
+            result.append(URLEncoder.encode(key, "UTF-8"));
+            result.append("=");
+            result.append(URLEncoder.encode(value.toString(), "UTF-8"));
+
+        }
+        return result.toString();
+    }
 }
