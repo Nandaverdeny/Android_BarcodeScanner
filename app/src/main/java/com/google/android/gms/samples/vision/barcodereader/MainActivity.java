@@ -51,6 +51,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     public static void addItem(String item)
     {
+        //TEST PUSH
         if (!listItems.contains(item)) {
             listItems.add(item);
             //adapter.notifyDataSetChanged();
