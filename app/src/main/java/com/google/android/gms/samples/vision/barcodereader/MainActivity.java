@@ -110,8 +110,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
         barcodeValue = (TextView)findViewById(R.id.barcode_value);
         barcodeListView = (ListView)findViewById(R.id.list_view_barcode);
 
+
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, listItems);
         barcodeListView.setAdapter(adapter);
+
 
         autoFocus = (CompoundButton) findViewById(R.id.auto_focus);
         useFlash = (CompoundButton) findViewById(R.id.use_flash);

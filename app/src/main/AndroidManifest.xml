@@ -20,7 +20,7 @@
         android:icon="@drawable/icon"
         android:label="Asset Management"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat"
+        android:theme="@style/Theme.AppCompat.Light"
         >
         <meta-data
             android:name="com.google.android.gms.version"
@@ -48,7 +48,7 @@
         <activity
             android:name=".HomeActivity"
             android:label="Asset Management"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".MovementRequest"
             android:label="Movement Request"

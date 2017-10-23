@@ -6,22 +6,26 @@
     android:layout_height="match_parent"
     tools:context="com.google.android.gms.samples.vision.barcodereader.HomeActivity">
 
+    <include layout="@layout/content_main" />
+
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:theme="@style/AppTheme.AppBarOverlay">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="#000000"
-            app:popupTheme="@style/AppTheme.AppBarOverlay" />
+            android:background="#f3f3f3"
+            android:subtitleTextColor="#323232"
+            android:titleTextColor="#323232"
+            app:popupTheme="@style/AppTheme.AppBarOverlay"
+            app:subtitleTextColor="#000000"
+            app:titleTextColor="#000000" />
 
     </android.support.design.widget.AppBarLayout>
-
-    <include layout="@layout/content_main" />
-
 
 
 </android.support.design.widget.CoordinatorLayout>

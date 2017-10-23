@@ -125,12 +125,17 @@ public class SplashActivity extends AppCompatActivity {
 
                 }
                 else {
-                    return new String("false : "+responseCode);
-                }
+                    Intent intent = new Intent(SplashActivity.this,LoginActivity.class);
+                    startActivity(intent);
+                    return new String("login failed");
 
+
+                }
 
             }
             catch (Exception e){
+                Intent intent = new Intent(SplashActivity.this,LoginActivity.class);
+                startActivity(intent);
                 return new String("Exception: " + e.getMessage());
             }
 

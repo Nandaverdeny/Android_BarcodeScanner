@@ -20,7 +20,9 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 
 public class MovementRequest extends AppCompatActivity  {
@@ -33,9 +35,9 @@ public class MovementRequest extends AppCompatActivity  {
         setContentView(R.layout.activity_movement_request);
         movementlist = new ArrayList<>();
         listView = (ListView) findViewById(R.id.movementlist);
-        new IntitTask().execute();
+        new InitTask().execute();
     }
-    public class IntitTask extends AsyncTask<Void, Void, Void> {
+    public class InitTask extends AsyncTask<Void, Void, Void> {
 
         public Void doInBackground(Void... urls) {
 
@@ -51,10 +53,19 @@ public class MovementRequest extends AppCompatActivity  {
                         String ID = movement.optString("ID");
                         String Description = movement.optString("Description");
                         String Location = movement.optString("LocationName");
-                        String MovementDate = movement.optString("MovementDate");
+                       //String MovementDate = movement.optString("MovementDate");
 
 
+                        SimpleDateFormat sdf = new SimpleDateFormat("ddMMyyyy");
+                        SimpleDateFormat dest = new SimpleDateFormat("EEE dd/MMM/yyyy");
+                        Date date = null;
+                        try {
+                            date = sdf.parse(movement.optString("MovementDate"));
+                        } catch (Exception ex) {
+                            Log.e("ERROR", ex.getMessage(), ex);
+                        }
 
+                        String MovementDate = dest.format(date);
 
 
                         HashMap<String, String> mv = new HashMap<>();
@@ -85,7 +96,7 @@ public class MovementRequest extends AppCompatActivity  {
             ListAdapter adapter = new SimpleAdapter(
                     MovementRequest.this,movementlist,
                     R.layout.list_item,new String[] {"id","description","location","movementdate"},
-                    new int[] {R.id.id,R.id.description,R.id.Location,R.id.movementdate}
+                    new int[] {R.id .id,R.id.description,R.id.Location,R.id.movementdate}
             );
             listView.setAdapter(adapter);
             final ListAdapter A = adapter;

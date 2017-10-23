@@ -29,7 +29,9 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 
 public class MovementRequestDetails extends AppCompatActivity {
@@ -66,7 +68,7 @@ public class MovementRequestDetails extends AppCompatActivity {
         Intent i = getIntent();
         id =   i.getStringExtra("id");
 
-        new IntitTask().execute();
+        new InitTask().execute();
         movementdetaillist = new ArrayList<>();
         textViewID = (TextView)findViewById(R.id.textViewID);
         textViewDescription = (TextView)findViewById(R.id.textViewDescription);
@@ -85,7 +87,7 @@ public class MovementRequestDetails extends AppCompatActivity {
         textViewNotes.setEnabled(false);
     }
 
-    public class IntitTask extends AsyncTask<Void, Void, Void> {
+    public class InitTask extends AsyncTask<Void, Void, Void> {
 
         public Void doInBackground(Void... urls) {
 
@@ -95,6 +97,7 @@ public class MovementRequestDetails extends AppCompatActivity {
                 try {
                     JSONObject jsonObject = new JSONObject(jsonString).getJSONObject("obj");
                     JSONArray jsonArray = jsonObject.optJSONArray("MovementRequestDetail");
+                    modelArrayList = new ArrayList<DataModel>();
                     for (int i = 0; i < jsonArray.length(); i++) {
                         JSONObject jb = jsonArray.getJSONObject(i);
                         HashMap<String, String> mv = new HashMap<>();
@@ -106,7 +109,7 @@ public class MovementRequestDetails extends AppCompatActivity {
                         String transfered = jb.optString("Transfered");
 
                         HashMap<String, String> mvdetail = new HashMap<>();
-                        modelArrayList = new ArrayList<DataModel>();
+
                         modelArrayList.add(new DataModel(id,assetcategory,description,qty,requestto,transfered));
                         mvdetail.put("iddetail", id);
                         mvdetail.put("assetcategory", assetcategory);
@@ -119,9 +122,19 @@ public class MovementRequestDetails extends AppCompatActivity {
 
                     }
                     JSONObject movement = jsonObject.getJSONObject("MovementRequest");
+                    SimpleDateFormat sdf = new SimpleDateFormat("ddMMyyyy");
+                    SimpleDateFormat dest = new SimpleDateFormat("EEE dd/MMM/yyyy");
+                    Date date = null;
+                    try {
+                        date = sdf.parse(movement.optString("MovementDate"));
+                    } catch (Exception ex) {
+                        Log.e("ERROR", ex.getMessage(), ex);
+                    }
+
+                    String movementDate = dest.format(date);
                     IDMv = movement.getString("ID");
                     Description = movement.getString("Description");
-                    MovementDate = movement.getString("MovementDate");
+                    MovementDate = movementDate;
                     Location = movement.getString("LocationName");
                     Notes = movement.getString("Notes");
                     LocationID = movement.getString("LocationID");

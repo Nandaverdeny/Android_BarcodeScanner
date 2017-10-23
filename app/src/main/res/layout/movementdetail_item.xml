@@ -1,85 +1,226 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/background_light"
-    android:shrinkColumns="*"
-    android:stretchColumns="*">
+    android:background="#eeeeee"
+    android:weightSum="1">
 
-    <TableRow
-
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:layout_marginRight="0dip"
+        app:cardBackgroundColor="@color/cardview_light_background"
+        app:cardCornerRadius="5dp"
+        app:contentPadding="15dp">
 
 
-        <TextView
-            android:id="@+id/editTextAssetCategory"
-            android:layout_weight="1"
-            android:background="#FFFFFF"
-            android:gravity="center"
-            android:padding="10dip"
-            android:text="Category"
-            android:textColor="#000000"
-            android:textSize="10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:padding="5dp">
 
-        <TextView
-            android:id="@+id/editTextDescription"
-            android:layout_weight="1"
-            android:background="#FFFFFF"
-            android:gravity="center"
-            android:padding="10dip"
-            android:text="Desc"
-            android:textColor="#000000"
-            android:textSize="10dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/editTextQty"
-            android:layout_weight="1"
-            android:background="#FFFFFF"
-            android:gravity="center"
-            android:padding="10dip"
-            android:text="Qty"
-            android:textColor="#000000"
-            android:textSize="10dp" />
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/textViewmovementdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingLeft="4dip"
+                    android:text="Category"
+                    android:textAlignment="textStart"
+                    android:textColor="#323232"
+                    android:textSize="12sp"
+                    tools:text="Category" />
 
-        <TextView
-            android:id="@+id/editTextTransfered"
-            android:layout_weight="1"
-            android:background="#FFFFFF"
-            android:gravity="center"
-            android:padding="10dip"
-            android:text="Transfered"
-            android:textColor="#000000"
-            android:textSize="10dp" />
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingLeft="4dip"
+                    android:text="Qty  :"
+                    android:textAlignment="textStart"
+                    android:textColor="#323232"
+                    android:textSize="12sp"
+                    tools:text="Qty  :" />
 
-        <Button
-            android:id="@+id/scanbutton"
-            style="@style/Widget.AppCompat.Button.Small"
-            android:layout_width="15dip"
-            android:layout_marginTop="2.2dip"
-            android:layout_weight="1"
-            android:background="@color/common_action_bar_splitter"
-            android:backgroundTint="@color/common_action_bar_splitter"
-            android:focusable="false"
-            android:gravity="center"
-            android:padding="10dip"
-            android:text="Scan"
-            android:textColor="#000000"
-            android:textSize="10dp" />
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/editTextQty"
+                    android:layout_width="43dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingLeft="2dp"
+                    android:text="qty"
+                    android:textColor="#323232"
+                    android:textSize="10sp" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingLeft="4dip"
+                    android:text="Transfered  :"
+                    android:textAlignment="textStart"
+                    android:textColor="#323232"
+                    android:textSize="12sp"
+                    tools:text="Transfered  :" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/editTextTransfered"
+                    android:layout_width="52dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingLeft="2dp"
+                    android:text="transfered"
+                    android:textColor="#323232"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:paddingLeft="2dp">
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="65dp"
+                    android:layout_height="1dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/appCompatTextView"
+                    android:background="#ff80cbc4" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:paddingLeft="1dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/editTextAssetCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingLeft="2dp"
+                    android:text="Category"
+                    android:textColor="#323232"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/scanbutton"
+                    style="@android:style/Widget.Button"
+                    android:layout_width="115dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="1dip"
+                    android:background="@color/common_action_bar_splitter"
+                    android:backgroundTint="@color/common_action_bar_splitter"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:padding="2dip"
+                    android:text="Scan"
+                    android:textColor="#000000"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
 
 
-    </TableRow>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
 
-    <TableRow>
-        <TextView
-            android:id="@+id/editTextIDDetail"
-            android:layout_weight="1"
-            android:background="#FFFFFF"
-            android:gravity="center"
-            android:padding="0dip"
-            android:text="id"
-            android:textColor="#000000"
-            android:textSize="2dp"
-            android:visibility="invisible"/>
-    </TableRow>
-</TableLayout>
+                <android.support.v7.widget.AppCompatTextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingLeft="4dip"
+                    android:text="Description"
+                    android:textAlignment="textStart"
+                    android:textColor="#323232"
+                    android:textSize="12sp"
+                    tools:text="Description" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:paddingLeft="2dp">
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="65dp"
+                    android:layout_height="1dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/appCompatTextView"
+                    android:background="#ff80cbc4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:paddingLeft="1dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/editTextDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingLeft="2dp"
+                    android:text="Description"
+                    android:textColor="#323232"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:paddingLeft="1dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/editTextIDDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingLeft="2dp"
+                    android:text="IDDetail"
+                    android:textColor="#323232"
+                    android:textSize="13sp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

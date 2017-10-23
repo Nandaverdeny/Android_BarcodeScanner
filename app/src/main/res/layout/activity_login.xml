@@ -11,7 +11,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.google.android.gms.samples.vision.barcodereader.LoginActivity"
-    android:background="#eef5f9">
+    android:background="#eeeeee">
 
     <!-- Login progress -->
     <ProgressBar
@@ -90,7 +90,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:background="#796AEE"
+                android:background="@color/cardview_shadow_start_color"
 
                 android:text="SIGN IN"
                 android:textStyle="bold" />
