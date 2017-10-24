@@ -58,6 +58,7 @@ public class MovementRequestDetails extends AppCompatActivity {
 
     ArrayList<HashMap<String,String>> movementdetaillist;
     ArrayList<DataModel> modelArrayList;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -168,7 +169,7 @@ public class MovementRequestDetails extends AppCompatActivity {
 
     public  String makeServiceCall(int id){
         try {
-            URL url = new URL("http://escurity001:1130/api/movementrequest/getmovementrequestbyid/"+ id);
+            URL url = new URL("http://escurity001:1130/api/movementrequest/getmovementrequesttomovebyid/"+ id);
             HttpURLConnection urlConnection = (HttpURLConnection   ) url.openConnection();
             urlConnection.setRequestProperty("Content-Type", "application/json;charset=utf-8");
             try {
