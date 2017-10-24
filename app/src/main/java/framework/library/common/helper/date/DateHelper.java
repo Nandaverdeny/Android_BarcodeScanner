@@ -2,6 +2,9 @@ package framework.library.common.helper.date;
 
 import android.support.annotation.Nullable;
 import android.util.Log;
+
+import java.text.DateFormat;
+import java.text.Format;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
@@ -23,6 +26,7 @@ public final class DateHelper {
     private static SimpleDateFormat _destDateFormat;
 
     private static Locale locale = Locale.getDefault();
+    private static String defaultDateFormat = "dd/MM/yyyy";
 
     private static SimpleDateFormat getDestDateFormat() { return _destDateFormat; }
     private static void setDestDateFormat(String _destFormat) { _destDateFormat = new SimpleDateFormat(_destFormat, locale); }
@@ -37,7 +41,7 @@ public final class DateHelper {
      */
     public static String ConvertToString(Date date) {
         _sourceDate = date;
-        SimpleDateFormat sdf = new SimpleDateFormat(this.getDateTimeInstance(), locale);
+        SimpleDateFormat sdf = new SimpleDateFormat(defaultDateFormat, locale);
         return sdf.format(_sourceDate);
     }
 
