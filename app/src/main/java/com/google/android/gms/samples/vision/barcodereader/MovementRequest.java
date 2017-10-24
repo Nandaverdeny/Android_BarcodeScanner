@@ -25,6 +25,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 
+//Framework
+import framework.library.common.helper.date.DateHelper;
+
 public class MovementRequest extends AppCompatActivity  {
     ListView listView ;
     ArrayList<HashMap<String,String>> movementlist;
@@ -56,7 +59,7 @@ public class MovementRequest extends AppCompatActivity  {
                        //String MovementDate = movement.optString("MovementDate");
 
 
-                        SimpleDateFormat sdf = new SimpleDateFormat("ddMMyyyy");
+                        /*SimpleDateFormat sdf = new SimpleDateFormat("ddMMyyyy");
                         SimpleDateFormat dest = new SimpleDateFormat("EEE dd/MMM/yyyy");
                         Date date = null;
                         try {
@@ -65,8 +68,9 @@ public class MovementRequest extends AppCompatActivity  {
                             Log.e("ERROR", ex.getMessage(), ex);
                         }
 
-                        String MovementDate = dest.format(date);
+                        String MovementDate = dest.format(date);*/
 
+                        String MovementDate = DateHelper.ConvertToStringDate(movement.optString("MovementDate"), "ddMMyyyy", "EEE dd/MM/yyyy");
 
                         HashMap<String, String> mv = new HashMap<>();
                         mv.put("id", ID);
