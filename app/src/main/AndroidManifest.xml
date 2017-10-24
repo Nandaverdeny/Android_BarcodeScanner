@@ -8,10 +8,10 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+
     <application
         android:name="android.support.multidex.MultiDexApplication"
         android:allowBackup="true"
@@ -20,8 +20,7 @@
         android:icon="@drawable/icon"
         android:label="Asset Management"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light"
-        >
+        android:theme="@style/Theme.AppCompat.Light">
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
@@ -52,16 +51,20 @@
         <activity
             android:name=".MovementRequest"
             android:label="Movement Request"
-            android:parentActivityName=".HomeActivity"
-           />
+            android:parentActivityName=".HomeActivity" />
         <activity
             android:name=".MovementRequestDetails"
             android:label="Details"
             android:parentActivityName=".MovementRequest" />
-        <activity android:name=".LoginActivity"
-            android:label="Asset Management"
+        <activity
+            android:name=".LoginActivity"
             android:gravity="center"
-            ></activity>
+            android:label="Asset Management" />
+        <activity
+            android:name=".StockOpnameActiviy"
+            android:label="Stock Opname"
+            android:parentActivityName=".HomeActivity" />
+        <activity android:name=".ScanLocation"></activity>
     </application>
 
 </manifest>

@@ -41,6 +41,7 @@ public class HomeActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         InitializeMovementRequest();
+        InitializeStockOpname();
 
 
         }
@@ -110,15 +111,36 @@ public class HomeActivity extends AppCompatActivity
              drawer.closeDrawer(GravityCompat.START);
              return true;
          }
-         public  void  InitializeMovementRequest(){
-             button = (Button)findViewById(R.id.movementrequest);
-             button.setOnClickListener(new View.OnClickListener() {
-                 @Override
-                 public void onClick(View v) {
-                     Intent i = new Intent(getApplicationContext(), MovementRequest.class);
+
+
+         public  void  InitializeStockOpname()
+         {
+             button = (Button)findViewById(R.id.stockopname);
+             button.setOnClickListener(new View.OnClickListener()
+             {
+                 public  void  onClick(View v)
+                 {
+                     Intent i = new Intent(getApplicationContext(), ScanLocation.class);
                      startActivity(i);
                  }
+             });
+         }
+
+
+
+
+         public  void  InitializeMovementRequest(){
+         button = (Button)findViewById(R.id.movementrequest);
+         button.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
+                 Intent i = new Intent(getApplicationContext(), MovementRequest.class);
+
+                 startActivity(i);
+             }
          });
+
+
     }
 
 }

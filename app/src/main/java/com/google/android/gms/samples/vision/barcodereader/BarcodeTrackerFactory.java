@@ -42,6 +42,7 @@ class BarcodeTrackerFactory implements MultiProcessor.Factory<Barcode> {
 
 
         MainActivity.addItem(barcode.displayValue);
+        ScanLocation.addItem(barcode.displayValue);
 
 
         BarcodeGraphic graphic = new BarcodeGraphic(mGraphicOverlay);
