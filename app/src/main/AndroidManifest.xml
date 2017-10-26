@@ -61,10 +61,14 @@
             android:gravity="center"
             android:label="Asset Management" />
         <activity
-            android:name=".StockOpnameActiviy"
+            android:name=".ScanLocation"
+            android:label="Scan Location"
+            android:parentActivityName=".HomeActivity" />
+        <activity
+            android:name=".AssetOpnameActivity"
             android:label="Stock Opname"
             android:parentActivityName=".HomeActivity" />
-        <activity android:name=".ScanLocation"></activity>
+        <activity android:name=".StockOpnameListActivity"></activity>
     </application>
 
 </manifest>
