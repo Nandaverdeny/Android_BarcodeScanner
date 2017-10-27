@@ -39,12 +39,7 @@ class BarcodeTrackerFactory implements MultiProcessor.Factory<Barcode> {
     @Override
     public Tracker<Barcode> create(Barcode barcode) {
         //TODO : Check barcode is loc or asset
-
-
         MainActivity.addItem(barcode.displayValue);
-        ScanLocation.addItem(barcode.displayValue);
-
-
         BarcodeGraphic graphic = new BarcodeGraphic(mGraphicOverlay);
         return new BarcodeGraphicTracker(mGraphicOverlay, graphic);
     }

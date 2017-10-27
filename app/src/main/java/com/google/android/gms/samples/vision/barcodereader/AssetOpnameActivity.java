@@ -4,6 +4,7 @@ import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
+import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -28,6 +29,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.HashMap;
 
 import javax.net.ssl.HttpsURLConnection;
 //Framework
@@ -40,7 +42,7 @@ public class AssetOpnameActivity extends AppCompatActivity implements View.OnCli
     TextView txtviewlocationName;
     private int mYear, mMonth, mDay;
     private String LocationID, LocationName, RecordDate;
-    ArrayList<AssetOpnameModel> modelArrayList;
+    ArrayList<HashMap<String,String>> arrayList;
     ListView assetopnamelist;
 
     @Override
@@ -60,7 +62,7 @@ public class AssetOpnameActivity extends AppCompatActivity implements View.OnCli
         txtviewlocationName = (TextView) findViewById(R.id.LocationName);
         txtviewlocationName.setText(LocationName);
 
-        assetopnamelist = (ListView) findViewById(R.id.assetopname);
+
 
         btnSubmitOnClick();
     }
@@ -165,76 +167,41 @@ public class AssetOpnameActivity extends AppCompatActivity implements View.OnCli
                 JSONObject object = data.getJSONObject("obj");
                 JSONArray assetOpname = object.optJSONArray("assetlocation");
 
-                modelArrayList = new ArrayList<AssetOpnameModel>();
+                arrayList = new ArrayList<>();
                 for (int i = 0; i < assetOpname.length(); i++) {
                     JSONObject jb = assetOpname.getJSONObject(i);
                     String ID = jb.optString("ID");
                     String AssetName = jb.optString("AssetName");
                     String AssetBarcode = jb.optString("AssetBarcode");
-                    boolean IsOpname = jb.optBoolean("isOpname");
-
-
+                    String IsOpname = jb.optString("isOpname");
                     JSONObject asset = jb.getJSONObject("AssetLatest");
                     String AssetID = asset.optString("AssetID");
 
+                    HashMap<String, String> obj = new HashMap<>();
+                    obj.put("ID",ID);
+                    obj.put("AssetID",AssetID);
+                    obj.put("AssetName",AssetName);
+                    obj.put("AssetBarcode",AssetBarcode);
+                    obj.put("IsOpname",IsOpname);
 
-                    modelArrayList.add(new AssetOpnameModel(ID, AssetID, AssetName, AssetBarcode, IsOpname));
+                    arrayList.add(obj);
+
                 }
 
 
                 Intent intent = new Intent(AssetOpnameActivity.this , StockOpnameListActivity.class);
-                intent.putExtra("assetlist",modelArrayList);
+                intent.putExtra("List",arrayList);
+                startActivity(intent);
 
-                CustomAdapter customAdapter = new CustomAdapter();
-                assetopnamelist.setAdapter(customAdapter);
+
 
             } catch (JSONException e) {
 
             }
         }
+
+
     }
 
-    public class CustomAdapter extends BaseAdapter {
-        ArrayList<AssetOpnameModel> listArray;
 
-        public CustomAdapter() {
-            listArray = new ArrayList<>();
-            listArray = modelArrayList;
-        }
-
-        public int getCount() {
-            return listArray.size();
-        }
-
-        public Object getItem(int i) {
-            return listArray.get(i);
-        }
-
-        public long getItemId(int i) {
-            return i;
-        }
-
-        public View getView(int index, View view, final ViewGroup parent) {
-            if (view == null) {
-                LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-                view = inflater.inflate(R.layout.asset_opname_item, parent, false);
-            }
-            final AssetOpnameModel dataModel = listArray.get(index);
-
-
-            TextView textviewAssetName = (TextView)view.findViewById(R.id.textviewAssetName);
-            textviewAssetName.setText(dataModel.GetAssetName());
-
-            TextView textViewAssetBarcode = (TextView)view.findViewById(R.id.textViewAssetBarcode);
-            textViewAssetBarcode.setText(dataModel.GetAssetBarcode());
-
-            Button button = (Button)view.findViewById(R.id.scanassetbtn);
-            if(dataModel.GetIsOpname() == true)
-            {
-                button.setVisibility(View.INVISIBLE);
-            }
-            return view;
-
-        }
-    }
 }

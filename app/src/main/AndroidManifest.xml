@@ -68,7 +68,10 @@
             android:name=".AssetOpnameActivity"
             android:label="Stock Opname"
             android:parentActivityName=".HomeActivity" />
-        <activity android:name=".StockOpnameListActivity"></activity>
+        <activity android:name=".StockOpnameListActivity" />
+        <activity android:name=".ScanAssetActivity" />
+        <activity android:name=".LocationBarcodeCapture" />
+        <activity android:name=".AssetBarcodeCapture"></activity>
     </application>
 
 </manifest>

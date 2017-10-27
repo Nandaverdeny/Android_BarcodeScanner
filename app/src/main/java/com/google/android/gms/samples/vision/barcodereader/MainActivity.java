@@ -111,6 +111,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         barcodeListView = (ListView)findViewById(R.id.list_view_barcode);
 
 
+
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, listItems);
         barcodeListView.setAdapter(adapter);
 

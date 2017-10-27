@@ -3,6 +3,7 @@ package com.google.android.gms.samples.vision.barcodereader;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -45,7 +46,7 @@ public class MovementRequest extends AppCompatActivity  {
         public Void doInBackground(Void... urls) {
 
             String jsonString = makeServiceCall();
-            if (jsonString != "") {
+            if (jsonString !=   null) {
                 try {
                     JSONObject data = new JSONObject(jsonString);
                     JSONArray jsonArray = data.optJSONArray("obj");
@@ -125,16 +126,18 @@ public class MovementRequest extends AppCompatActivity  {
     public  String makeServiceCall(){
         try {
             SharedPreferences user = getSharedPreferences("UserStore",MODE_PRIVATE);
+
             String departmentid = user.getString("DepartmentID",null);
             URL url;
-            if(departmentid!= null)
+            if(departmentid != null)
             {
-                url = new URL("http://escurity001:1130/api/movementrequest/getmovementrequesttomove");
+                url = new URL("http://Escurity001:1330/api/movementrequest/getmovementrequesttomovebydepartment/"+ Integer.parseInt(departmentid));
+
 
             }
             else
             {
-                url = new URL("http://Escurity001:1330/api/movementrequest/getmovementrequesttomovebydepartment/"+ Integer.parseInt(departmentid));
+                url = new URL("http://escurity001:1130/api/movementrequest/getmovementrequesttomove");
             }
 
 

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.google.android.gms.samples.vision.barcodereader.ScanLocation">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/status_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Click Read Barcode to Scan Asset"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#323232"
+            android:textSize="20sp" />
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+        <!--android:id="@+id/barcode_value"-->
+        <!--android:layout_below="@+id/status_message"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginTop="110dp"-->
+        <!--android:layout_alignRight="@+id/status_message"-->
+        <!--android:layout_alignEnd="@+id/status_message" />-->
+
+        <Button
+            android:id="@+id/read_barcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="11dp"
+            android:text="@string/read_barcode" />
+
+        <CheckBox
+            android:id="@+id/auto_focus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/barcode_value"
+            android:layout_marginTop="66dp"
+            android:checked="false"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/auto_focus"
+            android:textColor="#323232" />
+
+        <CheckBox
+            android:id="@+id/use_flash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/auto_focus"
+            android:checked="false"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/use_flash"
+            android:textColor="#323232" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="30dp"
+            android:text="Submit" />
+
+        <TextView
+            android:id="@+id/locationBarcodeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/read_barcode"
+            android:layout_below="@+id/auto_focus"
+            android:layout_marginTop="26dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <ListView
+            android:id="@+id/listasset"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@+id/locationBarcodeTextView"
+            android:layout_below="@+id/locationBarcodeTextView"
+            android:layout_marginTop="30dp"
+            android:layout_above="@+id/read_barcode" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
