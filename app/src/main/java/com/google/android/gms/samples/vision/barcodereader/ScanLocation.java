@@ -75,9 +75,9 @@ public class ScanLocation extends Activity implements View.OnClickListener {
         if (v.getId() == R.id.read_barcode) {
 
             // launch barcode activity.
-            Intent intent = new Intent(this, BarcodeCaptureActivity.class);
-            intent.putExtra(BarcodeCaptureActivity.AutoFocus, autoFocus.isChecked());
-            intent.putExtra(BarcodeCaptureActivity.UseFlash, useFlash.isChecked());
+            Intent intent = new Intent(this, LocationBarcodeCapture.class);
+            intent.putExtra(LocationBarcodeCapture.AutoFocus, autoFocus.isChecked());
+            intent.putExtra(LocationBarcodeCapture.UseFlash, useFlash.isChecked());
             startActivityForResult(intent, RC_BARCODE_CAPTURE);
         }
 
