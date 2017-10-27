@@ -413,8 +413,16 @@ public class LoginActivity extends AppCompatActivity implements LoaderManager.Lo
                     SharedPreferences.Editor editor = sharedpreferences.edit();
                     editor.putString("Username",objectresult.getString("Username"));
                     editor.putString("Password",mPassword);
-                    editor.putString("DepartmentID",objectresult.getString("DepartmentID"));
-                    editor.commit();
+                    String department = "";
+                    department = objectresult.getString("DepartmentID");
+                    if(department.contains("null"))
+                    {
+                        editor.commit();
+                    }
+                    else
+                    {
+                        editor.putString("DepartmentID",department);
+                    }
 
                     Intent intent = new Intent(LoginActivity.this,HomeActivity.class);
                     startActivity(intent);
