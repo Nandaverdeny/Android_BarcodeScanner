@@ -122,7 +122,7 @@ public class MovementRequestFragment extends Fragment {
                 if(departmentid != null)
                 {
                     //strUrl = "http://escurity001:1130/api/movementrequest/getmovementrequesttomove";
-                    strUrl = "http://escurity001:1330/api/movementrequest/getmovementrequesttomovebydepartment/"+ Integer.parseInt(departmentid);
+                    strUrl = "http://escurity001:1130/api/movementrequest/getmovementrequesttomovebydepartment/"+ Integer.parseInt(departmentid);
                 }
                 else
                 {
@@ -135,7 +135,8 @@ public class MovementRequestFragment extends Fragment {
                 if(departmentid != null)
                 {
                     //strUrl = "http://escurity001:1130/api/movementrequest/getmovementrequesttomove";
-                    strUrl = "http://escurity001:1330/api/movementrequest/getmovementrequesttomovebydepartment/"+ Integer.parseInt(departmentid);
+
+                    strUrl = "http://escurity001:1130/api/movementrequest/getmovementrequesttomovebydepartment/"+ Integer.parseInt(departmentid);
                 }
                 else
                 {
