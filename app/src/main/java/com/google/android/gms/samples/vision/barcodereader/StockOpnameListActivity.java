@@ -20,17 +20,26 @@ import java.util.HashMap;
 
 public class StockOpnameListActivity extends AppCompatActivity {
 
-    ArrayList<HashMap<String,String>> arrayList;
+
     ArrayList<AssetOpnameModel> assetOpnameModelArrayList;
     ListView assetopnamelist;
+    public  String LocationID,DateOpname;
+    public  int Status;
+    private static ArrayList<String> AssetIDList = new ArrayList<String>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stock_opname_list);
         Intent intent = getIntent();
         ArrayList<String> assetlist = intent.getStringArrayListExtra("List");
-
-
+        LocationID = intent.getStringExtra("LocationID");
+        DateOpname = intent.getStringExtra("Date");
+        Status =  Integer.parseInt(intent.getStringExtra("Status"));
+        if(Status == 1)
+        {
+            convertStringToJson(assetlist);
+        }
 
 
         assetopnamelist = (ListView) findViewById(R.id.assetopname);
@@ -47,6 +56,7 @@ public class StockOpnameListActivity extends AppCompatActivity {
             try {
                 JSONArray  jsonArray= new JSONArray(list);
                 assetOpnameModelArrayList = new ArrayList<AssetOpnameModel>();
+                AssetIDList = new ArrayList<>();
                 for (int i = 0 ; i < jsonArray.length(); i++ )
                 {
                     JSONObject obj = jsonArray.getJSONObject(i);
@@ -55,7 +65,11 @@ public class StockOpnameListActivity extends AppCompatActivity {
                     String AssetBarcode = obj.optString("AssetBarcode");
                     boolean IsOpname = obj.optBoolean("isOpname");
                     String AssetID = obj.optString("AssetID");
+
                     assetOpnameModelArrayList.add(new AssetOpnameModel(ID,AssetID,AssetName,AssetBarcode,IsOpname));
+                    AssetIDList.add(AssetID);
+
+
                 }
 
 
@@ -117,6 +131,8 @@ public class StockOpnameListActivity extends AppCompatActivity {
             public  void  onClick(View v)
             {
                 Intent i = new Intent(getApplicationContext(), ScanAssetActivity.class);
+                i.putExtra("LocationID",LocationID);
+                i.putExtra("AssetList",AssetIDList);
                 startActivity(i);
             }
         });

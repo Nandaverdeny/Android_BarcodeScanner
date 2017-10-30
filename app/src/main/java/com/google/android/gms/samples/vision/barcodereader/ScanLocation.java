@@ -146,7 +146,6 @@ public class ScanLocation extends Activity implements View.OnClickListener {
                 Intent intent = new Intent(ScanLocation.this,AssetOpnameActivity.class);
                 intent.putExtra("LocationID",LocationID);
                 intent.putExtra("LocationName",LocationName);
-
                 startActivity(intent);
             }
             else
