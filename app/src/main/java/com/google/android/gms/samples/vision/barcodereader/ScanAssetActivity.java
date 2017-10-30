@@ -218,10 +218,8 @@ public class ScanAssetActivity extends AppCompatActivity implements View.OnClick
 
                 if(status.contains("true"))
                 {
-                    Intent intent = new Intent(ScanAssetActivity.this,StockOpnameListActivity.class);
+                    Intent intent = new Intent(ScanAssetActivity.this,AssetOpnameActivity.class);
                     intent.putExtra("LocationID",LocationID);
-                    intent.putExtra("Status",1);
-                    intent.putExtra("Date",DateOpname);
                     listItems.clear();
                     startActivity(intent);
                 }

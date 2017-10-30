@@ -34,12 +34,7 @@ public class StockOpnameListActivity extends AppCompatActivity {
         Intent intent = getIntent();
         ArrayList<String> assetlist = intent.getStringArrayListExtra("List");
         LocationID = intent.getStringExtra("LocationID");
-        DateOpname = intent.getStringExtra("Date");
-        Status =  Integer.parseInt(intent.getStringExtra("Status"));
-        if(Status == 1)
-        {
-            convertStringToJson(assetlist);
-        }
+
 
 
         assetopnamelist = (ListView) findViewById(R.id.assetopname);

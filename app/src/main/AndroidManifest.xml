@@ -17,7 +17,7 @@
         android:allowBackup="true"
         android:fullBackupContent="false"
         android:hardwareAccelerated="true"
-        android:icon="@drawable/icon"
+        android:icon="@drawable/assetmanagementblackwhite"
         android:label="Asset Management"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light">
