@@ -18,8 +18,10 @@
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
 
-    <!-- Optional permission for Analytics to run. -->
-    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Permissions required for GCM -->
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="26.0.0-alpha1" /> <!-- Optional permission for Analytics to run. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 
     <permission
@@ -32,19 +34,15 @@
         android:glEsVersion="0x00020000"
         android:required="true" />
 
-    <meta-data
-        android:name="android.support.VERSION"
-        android:value="26.0.0-alpha1" />
-
     <application
         android:name="android.support.multidex.MultiDexApplication"
         android:allowBackup="true"
         android:fullBackupContent="false"
         android:hardwareAccelerated="true"
-        android:icon="@drawable/icon"
+        android:icon="@drawable/assetmanagementblackwhite"
         android:label="Asset Management"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat" >
+        android:theme="@style/Theme.AppCompat.Light" >
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
@@ -71,7 +69,7 @@
         <activity
             android:name="com.google.android.gms.samples.vision.barcodereader.HomeActivity"
             android:label="Asset Management"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name="com.google.android.gms.samples.vision.barcodereader.MovementRequest"
             android:label="Movement Request"
@@ -84,6 +82,18 @@
             android:name="com.google.android.gms.samples.vision.barcodereader.LoginActivity"
             android:gravity="center"
             android:label="Asset Management" />
+        <activity
+            android:name="com.google.android.gms.samples.vision.barcodereader.ScanLocation"
+            android:label="Scan Location"
+            android:parentActivityName="com.google.android.gms.samples.vision.barcodereader.HomeActivity" />
+        <activity
+            android:name="com.google.android.gms.samples.vision.barcodereader.AssetOpnameActivity"
+            android:label="Stock Opname"
+            android:parentActivityName="com.google.android.gms.samples.vision.barcodereader.HomeActivity" />
+        <activity android:name="com.google.android.gms.samples.vision.barcodereader.StockOpnameListActivity" />
+        <activity android:name="com.google.android.gms.samples.vision.barcodereader.ScanAssetActivity" />
+        <activity android:name="com.google.android.gms.samples.vision.barcodereader.LocationBarcodeCapture" />
+        <activity android:name="com.google.android.gms.samples.vision.barcodereader.AssetBarcodeCapture" />
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
@@ -92,6 +102,17 @@
         <activity
             android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"
             android:theme="@style/Theme.IAPTheme" />
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.google.android.gms.samples.vision.barcodereader.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+
         <activity
             android:name="com.google.android.gms.appinvite.PreviewActivity"
             android:exported="true"
@@ -115,53 +136,6 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
             android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
             android:exported="true"
             android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
-        <service
-            android:name="com.google.firebase.crash.internal.service.FirebaseCrashReceiverService"
-            android:process=":background_crash" />
-        <service
-            android:name="com.google.firebase.crash.internal.service.FirebaseCrashSenderService"
-            android:process=":background_crash" />
-        <!--
- FirebaseMessagingService performs security checks at runtime,
-             no need for explicit permissions despite exported="true"
-        -->
-        <service
-            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-            android:exported="true" >
-            <intent-filter android:priority="-500" >
-                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-            </intent-filter>
-        </service>
-        <service
-            android:name="com.google.android.gms.tagmanager.TagManagerService"
-            android:enabled="true"
-            android:exported="false" />
-
-        <activity
-            android:name="com.google.android.gms.tagmanager.TagManagerPreviewActivity"
-            android:noHistory="true" > <!-- optional, removes the previewActivity from the activity stack. -->
-            <intent-filter>
-                <data android:scheme="tagmanager.c.com.google.android.gms.samples.vision.barcodereader" />
-
-                <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-            </intent-filter>
-        </activity>
-
-        <receiver
-            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-            android:enabled="true" >
-            <intent-filter>
-                <action android:name="com.google.android.gms.measurement.UPLOAD" />
-            </intent-filter>
-        </receiver>
-
-        <service
-            android:name="com.google.android.gms.measurement.AppMeasurementService"
-            android:enabled="true"
-            android:exported="false" />
 
         <receiver
             android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
@@ -192,17 +166,53 @@ Service handling Google Sign-In user revocation. For apps that do not integrate 
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
+        <service
+            android:name="com.google.firebase.crash.internal.service.FirebaseCrashReceiverService"
+            android:process=":background_crash" />
+        <service
+            android:name="com.google.firebase.crash.internal.service.FirebaseCrashSenderService"
+            android:process=":background_crash" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.google.android.gms.measurement.UPLOAD" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <!--
+ FirebaseMessagingService performs security checks at runtime,
+             no need for explicit permissions despite exported="true"
+        -->
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="true" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.google.android.gms.tagmanager.TagManagerService"
+            android:enabled="true"
+            android:exported="false" />
 
         <activity
-            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-            android:exported="false"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+            android:name="com.google.android.gms.tagmanager.TagManagerPreviewActivity"
+            android:noHistory="true" > <!-- optional, removes the previewActivity from the activity stack. -->
+            <intent-filter>
+                <data android:scheme="tagmanager.c.com.google.android.gms.samples.vision.barcodereader" />
 
-        <provider
-            android:name="com.google.firebase.provider.FirebaseInitProvider"
-            android:authorities="com.google.android.gms.samples.vision.barcodereader.firebaseinitprovider"
-            android:exported="false"
-            android:initOrder="100" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
