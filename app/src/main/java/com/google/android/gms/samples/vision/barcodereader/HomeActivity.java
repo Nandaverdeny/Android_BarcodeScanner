@@ -62,7 +62,8 @@ public class HomeActivity extends AppCompatActivity
              SharedPreferences user = getSharedPreferences("UserStore",MODE_PRIVATE);
              String username = user.getString("Username",null);
              TextView Username = (TextView)findViewById(R.id.username);
-             Username.setText(username);
+             String usernameshow = username + " !";
+             Username.setText(usernameshow);
              return true;
          }
 
@@ -87,11 +88,16 @@ public class HomeActivity extends AppCompatActivity
              // Handle navigation view item clicks here.
              int id = item.getItemId();
 
-             if (id == R.id.nav_camera) {
-                 // Handle the camera action
-             } else if (id == R.id.nav_gallery) {
+             if (id == R.id.nav_home) {
+                 Intent intent = new Intent(HomeActivity.this,HomeActivity.class);
+                 startActivity(intent);
+             } else if (id == R.id.nav_assetmovement) {
+                 Intent intent = new Intent(HomeActivity.this,MovementRequest.class);
+                 startActivity(intent);
 
-             } else if (id == R.id.nav_slideshow) {
+             } else if (id == R.id.nav_assetopname) {
+                 Intent intent = new Intent(HomeActivity.this,ScanLocation.class);
+                 startActivity(intent);
 
              }
              else if( id == R.id.nav_manage)
