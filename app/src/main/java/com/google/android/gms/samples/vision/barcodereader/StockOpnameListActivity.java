@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -112,6 +113,12 @@ public class StockOpnameListActivity extends AppCompatActivity {
             TextView textViewAssetBarcode = (TextView)view.findViewById(R.id.textViewAssetBarcode);
             textViewAssetBarcode.setText(dataModel.GetAssetBarcode());
 
+            ImageView imageView2 = (ImageView)view.findViewById(R.id.imageView2);
+            boolean checkIsOpname = dataModel.GetIsOpname();
+            if( checkIsOpname == false)
+            {
+                imageView2.setVisibility(View.INVISIBLE);
+            }
 
             return view;
 
@@ -128,6 +135,7 @@ public class StockOpnameListActivity extends AppCompatActivity {
                 Intent i = new Intent(getApplicationContext(), ScanAssetActivity.class);
                 i.putExtra("LocationID",LocationID);
                 i.putExtra("AssetList",AssetIDList);
+
                 startActivity(i);
             }
         });
