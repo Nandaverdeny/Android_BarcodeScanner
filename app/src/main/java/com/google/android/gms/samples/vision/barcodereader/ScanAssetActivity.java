@@ -41,13 +41,34 @@ public class ScanAssetActivity extends AppCompatActivity implements View.OnClick
     private static ArrayList<String> listItems = new ArrayList<String>();
     private static ArrayAdapter<String> adapter;
     private ListView AssetBarcodeListView;
-    public  String LocationID,DateOpname;
-    ArrayList<String> assetlist;
+    public  String LocationID,OpnameDate ,LocationName;
+    ArrayList<String> AssetIDList;
+    private  static  ArrayList<String> AssetList;
 
     public static void addItem(String item)
     {
         if(!listItems.contains(item)) {
-            listItems.add(item);
+            try {
+                JSONArray list = new JSONArray(AssetList);
+                Integer check = 0;
+                for (int i = 0; i < list.length(); i++) {
+                    JSONObject jsonObject = list.getJSONObject(i);
+                    String Barcode = jsonObject.optString("AssetBarcode");
+                    String IsOpname = jsonObject.optString("IsOpname");
+
+                    if(Barcode.contains(item))
+                    {
+                        if(!IsOpname.contains("1"))
+                        {
+                            listItems.add(item);
+                        }
+                    }
+                }
+            }
+            catch (JSONException e)
+            {
+            }
+
         }
 
     }
@@ -68,9 +89,11 @@ public class ScanAssetActivity extends AppCompatActivity implements View.OnClick
         AssetBarcodeListView.setAdapter(adapter);
 
         Intent intent = getIntent();
-        assetlist = intent.getStringArrayListExtra("AssetList");
+        AssetIDList = intent.getStringArrayListExtra("AssetIDList");
+        AssetList = intent.getStringArrayListExtra("AssetList");
         LocationID = intent.getStringExtra("LocationID");
-        DateOpname = intent.getStringExtra("DateOpname");
+        LocationName = intent.getStringExtra("LocationName");
+        OpnameDate = intent.getStringExtra("OpnameDate");
 
         Submit();
     }
@@ -149,7 +172,7 @@ public class ScanAssetActivity extends AppCompatActivity implements View.OnClick
 
                 JSONObject object = new JSONObject();
                 JSONArray assetopname = new JSONArray(listItems);
-                JSONArray assetid = new JSONArray(assetlist);
+                JSONArray assetid = new JSONArray(AssetIDList);
                 String createdby = user.getString("Username",null);
                 object.put("AssetOpname",assetopname);
                 object.put("AssetIDList",assetid);
@@ -220,6 +243,8 @@ public class ScanAssetActivity extends AppCompatActivity implements View.OnClick
                 {
                     Intent intent = new Intent(ScanAssetActivity.this,AssetOpnameActivity.class);
                     intent.putExtra("LocationID",LocationID);
+                    intent.putExtra("LocationName",LocationName);
+                    intent.putExtra("OpnameDate",OpnameDate);
                     listItems.clear();
                     startActivity(intent);
                 }

@@ -24,10 +24,10 @@ public class StockOpnameListActivity extends AppCompatActivity {
 
     ArrayList<AssetOpnameModel> assetOpnameModelArrayList;
     ListView assetopnamelist;
-    public  String LocationID,DateOpname;
+    public  String LocationID,OpnameDate,LocationName;
     public  int Status;
     private static ArrayList<String> AssetIDList = new ArrayList<String>();
-
+    private ArrayList<HashMap<String,String>> AssetList;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +35,8 @@ public class StockOpnameListActivity extends AppCompatActivity {
         Intent intent = getIntent();
         ArrayList<String> assetlist = intent.getStringArrayListExtra("List");
         LocationID = intent.getStringExtra("LocationID");
+        LocationName = intent.getStringExtra("LocationName");
+        OpnameDate = intent.getStringExtra("OpnameDate");
 
 
 
@@ -53,17 +55,32 @@ public class StockOpnameListActivity extends AppCompatActivity {
                 JSONArray  jsonArray= new JSONArray(list);
                 assetOpnameModelArrayList = new ArrayList<AssetOpnameModel>();
                 AssetIDList = new ArrayList<>();
+                AssetList = new ArrayList<>();
                 for (int i = 0 ; i < jsonArray.length(); i++ )
                 {
                     JSONObject obj = jsonArray.getJSONObject(i);
                     String ID = obj.optString("ID");
                     String AssetName = obj.optString("AssetName");
                     String AssetBarcode = obj.optString("AssetBarcode");
-                    boolean IsOpname = obj.optBoolean("isOpname");
+                    boolean IsOpname = obj.optBoolean("IsOpname");
                     String AssetID = obj.optString("AssetID");
+                    String Opname = "";
+                    if(IsOpname == true)
+                    {
+                        Opname = "1";
+                    }
+                    else
+                    {
+                        Opname = "0";
+                    }
 
                     assetOpnameModelArrayList.add(new AssetOpnameModel(ID,AssetID,AssetName,AssetBarcode,IsOpname));
                     AssetIDList.add(AssetID);
+                    HashMap<String, String> mv = new HashMap<>();
+                    mv.put("AssetBarcode",AssetBarcode);
+                    mv.put("IsOpname", Opname);
+                    AssetList.add(mv);
+
 
 
                 }
@@ -134,7 +151,10 @@ public class StockOpnameListActivity extends AppCompatActivity {
             {
                 Intent i = new Intent(getApplicationContext(), ScanAssetActivity.class);
                 i.putExtra("LocationID",LocationID);
-                i.putExtra("AssetList",AssetIDList);
+                i.putExtra("AssetIDList",AssetIDList);
+                i.putExtra("AssetList",AssetList);
+                i.putExtra("LocationName",LocationName);
+                i.putExtra("OpnameDate",OpnameDate);
 
                 startActivity(i);
             }

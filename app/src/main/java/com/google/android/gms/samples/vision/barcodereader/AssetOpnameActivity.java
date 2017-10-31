@@ -29,6 +29,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
 
 import javax.net.ssl.HttpsURLConnection;
@@ -41,7 +42,7 @@ public class AssetOpnameActivity extends AppCompatActivity implements View.OnCli
     EditText txtDate;
     TextView txtviewlocationName;
     private int mYear, mMonth, mDay;
-    private String LocationID, LocationName, RecordDate;
+    private String LocationID, LocationName, RecordDate, OpnameDate;
     ArrayList<HashMap<String,String>> arrayList;
 
     @Override
@@ -57,13 +58,21 @@ public class AssetOpnameActivity extends AppCompatActivity implements View.OnCli
         Intent intent = getIntent();
         LocationID = intent.getStringExtra("LocationID");
         LocationName = intent.getStringExtra("LocationName");
+        OpnameDate = intent.getStringExtra("OpnameDate");
 
         txtviewlocationName = (TextView) findViewById(R.id.LocationName);
         txtviewlocationName.setText(LocationName);
 
-
-
         btnSubmitOnClick();
+
+        if(OpnameDate != null)
+        {
+            RecordDate = OpnameDate;
+            new GetAssetOpname().execute();
+        }
+
+
+
     }
 
     @Override
@@ -189,6 +198,9 @@ public class AssetOpnameActivity extends AppCompatActivity implements View.OnCli
                 Intent intent = new Intent(AssetOpnameActivity.this , StockOpnameListActivity.class);
                 intent.putExtra("List",arrayList);
                 intent.putExtra("LocationID",LocationID);
+                intent.putExtra("LocationName",LocationName);
+                intent.putExtra("OpnameDate",RecordDate);
+
                 startActivity(intent);
 
 
