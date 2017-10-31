@@ -306,6 +306,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 {
                     Intent intent = new Intent(MainActivity.this,MovementRequestDetails.class);
                     intent.putExtra("id",MovementID );
+                    listItems.clear();
                     startActivity(intent);
                 }
                 else

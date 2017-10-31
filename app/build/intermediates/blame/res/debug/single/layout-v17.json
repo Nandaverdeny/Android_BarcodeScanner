@@ -1,10 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\escurity\\AndroidStudioProjects\\Android_BarcodeScanner\\app\\build\\intermediates\\res\\merged\\debug\\layout-v17\\mr_media_route_list_item.xml",
-        "source": "C:\\Users\\escurity\\.android\\build-cache\\751ced6710c4968149d68b3dc90a2dfbf136919b\\output\\res\\layout-v17\\mr_media_route_list_item.xml"
+        "merged": "/Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/res/merged/debug/layout-v17/mr_media_route_list_item.xml",
+        "source": "/Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/layout-v17/mr_media_route_list_item.xml"
     },
     {
-        "merged": "C:\\Users\\escurity\\AndroidStudioProjects\\Android_BarcodeScanner\\app\\build\\intermediates\\res\\merged\\debug\\layout-v17\\activity_main.xml",
-        "source": "C:\\Users\\escurity\\AndroidStudioProjects\\Android_BarcodeScanner\\app\\src\\main\\res\\layout-v17\\activity_main.xml"
+        "merged": "/Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/build/intermediates/res/merged/debug/layout-v17/activity_main.xml",
+        "source": "/Users/verdeny/AndroidStudioProjects/Android_BarcodeScanner/app/src/main/res/layout-v17/activity_main.xml"
     }
 ]

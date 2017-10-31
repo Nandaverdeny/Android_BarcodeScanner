@@ -39,7 +39,7 @@
                 android:layout_marginRight="0dp"
                 android:background="@android:color/background_light"
                 android:fontFamily="sans-serif-condensed"
-                android:text="Movement Request"
+                android:text="Asset Movement"
                 android:textSize="20dp"
                 app:layout_constraintHorizontal_bias="0.526"
                 app:layout_constraintLeft_toLeftOf="parent"

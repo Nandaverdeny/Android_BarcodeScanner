@@ -43,7 +43,6 @@ public class AssetOpnameActivity extends AppCompatActivity implements View.OnCli
     private int mYear, mMonth, mDay;
     private String LocationID, LocationName, RecordDate;
     ArrayList<HashMap<String,String>> arrayList;
-    ListView assetopnamelist;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -116,8 +115,6 @@ public class AssetOpnameActivity extends AppCompatActivity implements View.OnCli
             try {
 
                 URL url = new URL("http://escurity001:1130/api/assetlocation/getassetstockopname");
-
-
                 JSONObject object = new JSONObject();
                 object.put("LocationID", LocationID);
                 object.put("CreatedDate", RecordDate);
@@ -191,6 +188,7 @@ public class AssetOpnameActivity extends AppCompatActivity implements View.OnCli
 
                 Intent intent = new Intent(AssetOpnameActivity.this , StockOpnameListActivity.class);
                 intent.putExtra("List",arrayList);
+                intent.putExtra("LocationID",LocationID);
                 startActivity(intent);
 
 
