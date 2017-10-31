@@ -121,12 +121,11 @@ public class MovementRequestFragment extends Fragment {
             {
                 if(departmentid != null)
                 {
-                    //strUrl = "http://escurity001:1130/api/movementrequest/getmovementrequesttomove";
-                    strUrl = "http://escurity001:1130/api/movementrequest/getmovementrequesttomovebydepartment/"+ Integer.parseInt(departmentid);
+                    strUrl = "http://escurity001:1130/api/movementrequest/GetMovementRequestCompletedByDepartment/"+ Integer.parseInt(departmentid);
                 }
                 else
                 {
-                    strUrl = "http://escurity001:1130/api/movementrequest/getmovementrequesttomove";
+                    strUrl = "http://escurity001:1130/api/movementrequest/GetMovementRequestCompleted";
                 }
             }
             // tab On Progress
@@ -134,13 +133,11 @@ public class MovementRequestFragment extends Fragment {
             {
                 if(departmentid != null)
                 {
-                    //strUrl = "http://escurity001:1130/api/movementrequest/getmovementrequesttomove";
-
-                    strUrl = "http://escurity001:1130/api/movementrequest/getmovementrequesttomovebydepartment/"+ Integer.parseInt(departmentid);
+                    strUrl = "http://escurity001:1130/api/movementrequest/GetMovementRequestToMoveByDepartment/"+ Integer.parseInt(departmentid);
                 }
                 else
                 {
-                    strUrl = "http://escurity001:1130/api/movementrequest/getmovementrequesttomove";
+                    strUrl = "http://escurity001:1130/api/movementrequest/GetMovementRequestToMove";
                 }
             }
             Log.e("App","strUrl : " + strUrl);
