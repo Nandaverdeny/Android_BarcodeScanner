@@ -159,7 +159,7 @@ public class ScanLocation extends Activity implements View.OnClickListener {
 
     public  String makeServiceCall(){
         try {
-            URL url = new URL("http://escurity001:1130/api/location/getlocationbycode/" + "ES010202010001");
+            URL url = new URL("http://escurity001:1130/api/location/getlocationbycode/" + LocationBarcode );
             HttpURLConnection urlConnection = (HttpURLConnection   ) url.openConnection();
             urlConnection.setRequestProperty("Content-Type", "application/json;charset=utf-8");
             try {
