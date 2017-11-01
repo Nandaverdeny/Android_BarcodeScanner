@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.google.android.gms.samples.vision.barcodereader.MovementRequest"
+    tools:context=".MovementRequest"
     android:background="#eef5f9">
 
     <FrameLayout

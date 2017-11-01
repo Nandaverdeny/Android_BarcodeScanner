@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.google.android.gms.samples.vision.barcodereader"
+    package="com.escurity.asset.management"
     android:installLocation="auto">
 
     <uses-feature android:name="android.hardware.camera" />
@@ -32,7 +32,7 @@
             android:name=".MainActivity"
             android:label="" />
         <activity
-            android:name=".BarcodeCaptureActivity"
+            android:name=".barcodereader.BarcodeCaptureActivity"
             android:label="Read Barcode" />
         <activity
             android:name=".SplashActivity"
@@ -61,7 +61,7 @@
             android:gravity="center"
             android:label="Asset Management" />
         <activity
-            android:name=".ScanLocation"
+            android:name=".ScanLocationActivity"
             android:label="Scan Location"
             android:parentActivityName=".HomeActivity" />
         <activity
@@ -70,8 +70,8 @@
             android:parentActivityName=".HomeActivity" />
         <activity android:name=".StockOpnameListActivity" />
         <activity android:name=".ScanAssetActivity" />
-        <activity android:name=".LocationBarcodeCapture" />
-        <activity android:name=".AssetBarcodeCapture"></activity>
+        <activity android:name=".barcodereader.LocationBarcodeCapture" />
+        <activity android:name=".barcodereader.AssetBarcodeCapture"></activity>
     </application>
 
 </manifest>

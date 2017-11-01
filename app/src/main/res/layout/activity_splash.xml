@@ -8,7 +8,7 @@
     android:paddingLeft="0dp"
     android:paddingRight="0dp"
     android:paddingTop="0dp"
-    tools:context="com.google.android.gms.samples.vision.barcodereader.SplashActivity">
+    tools:context=".SplashActivity">
 
     <ImageView
         android:src="@drawable/assetmanagementblackwhite"
